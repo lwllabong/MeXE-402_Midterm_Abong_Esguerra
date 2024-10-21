@@ -16,8 +16,8 @@ DETAILS ABOUT THE DATASET USED
 ### PROJECT OBJECTIVES: 
 WHAT YOU AIM TO ACHIEVE WITH YOUR ANALYSIS
 
-<h1 style="font-size: 36px;">MIDTERM EXAMINATION</h1>
-<h2 style="font-size: 28px;">INTRODUCTION:</h2>
+<h1 style="font-size: 40px;">MIDTERM EXAMINATION</h1>
+<h2 style="font-size: 30px;">INTRODUCTION:</h2>
 
 <p>Linear and Logistic Regression are two common techniques used to predict outcomes, but they are suited for different types of problems.</p>
 
