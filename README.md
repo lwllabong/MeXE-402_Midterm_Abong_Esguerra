@@ -33,7 +33,8 @@ Analyzing the provided datasets and conducting a thorough analysis of the requir
 
 ##### For Linear Regression (CAR PRICING ASSIGNMENT)
 
-Car Prices Data Dictionary
+Car Prices Data Dictionary 
+(Y= CarPrice; dependent variable)
 
  <img src="https://github.com/user-attachments/assets/9e010651-7c47-4df2-8f1b-e93f6134bfe0" alt="Screenshot" width="500" height="250">
  
