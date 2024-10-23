@@ -1,4 +1,10 @@
 # MIDTERM EXAMINATION
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a9203597-bea5-44ad-beaa-185612b35407" alt="Midterm Banner" width="2500" height="200">
+</p>
+
+
 ## INTRODUCTION: 
 
 Linear and Logistic Regression are two common techniques used to predict outcomes, but they are suited for different types of problems.
