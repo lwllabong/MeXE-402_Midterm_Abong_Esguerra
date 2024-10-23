@@ -33,8 +33,6 @@ Analyzing the provided datasets and conducting a thorough analysis of the requir
 
 ##### For Linear Regression (CAR PRICING ASSIGNMENT)
 
-##### Car Prices Data Dictionary 
-
 ###### (Y= CarPrice; dependent variable) 
 ###### independent variables:
 wheelbase (distance between front and rear wheels)
@@ -50,6 +48,9 @@ horsepower (power output of the engine)
 peakrpm (maximum engine RPM)
 citympg (mileage in city driving)
 highwaympg (mileage in highway driving)
+
+
+##### Car Prices Data Dictionary 
 
  <img src="https://github.com/user-attachments/assets/9e010651-7c47-4df2-8f1b-e93f6134bfe0" alt="Screenshot" width="500" height="250">
  
