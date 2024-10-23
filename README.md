@@ -50,7 +50,7 @@ citympg (mileage in city driving)
 highwaympg (mileage in highway driving)
 
 
-##### Car Prices Data Dictionary 
+Car Prices Data Dictionary 
 
  <img src="https://github.com/user-attachments/assets/9e010651-7c47-4df2-8f1b-e93f6134bfe0" alt="Screenshot" width="500" height="250">
  
