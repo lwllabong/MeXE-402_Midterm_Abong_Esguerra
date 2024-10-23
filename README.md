@@ -13,7 +13,8 @@ Linear Regression is used when we want to predict a continuous value, (e.g the p
  <img src="https://github.com/user-attachments/assets/fb81331d-5981-48e2-8ee9-6434063ea3de" alt="Screenshot" width="500" height="150">
 
 Linear Graphing Example; GIF courtesy: Simplilearn
-<img src="![0_0plB5_YzkViGnD3j](https://github.com/user-attachments/assets/cf6be845-444a-4ae3-abcb-2813f5bfe6de)" width="500" height="150">
+<img src="https://github.com/user-attachments/assets/cf6be845-444a-4ae3-abcb-2813f5bfe6de" width="500" height="150">
+
 
 ### Logistic Regression 
 Logistic Regression, on the other hand, is used when we need to predict a category, like "yes or no" decisions. For example, it helps to answer questions like "Will it rain tomorrow?" or "Is this email spam?" It doesn’t provide a straight line but instead predicts the probability that something will happen, usually expressed between 0 and 1.
