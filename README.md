@@ -36,7 +36,7 @@ Analyzing the provided datasets and conducting a thorough analysis of the requir
 ##### Car Prices Data Dictionary 
 
 ###### (Y= CarPrice; dependent variable) 
-independent variables:
+###### independent variables:
 wheelbase (distance between front and rear wheels)
 carlength (length of the car)
 carwidth (width of the car)
