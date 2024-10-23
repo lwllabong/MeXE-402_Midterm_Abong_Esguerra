@@ -32,10 +32,16 @@ The dataset presents information on understanding the car features that actually
 Analyzing the provided datasets and conducting a thorough analysis of the required data for each scenario involving the application of linear and logistic regression. This includes data organization, cleaning, and the elimination of variables that may introduce obstacles or errors in the final implementation. The process culminates in the integration and application of the refined data to achieve the outcome.
 
 For Linear Regression (CAR PRICING ASSIGNMENT)
+
 Car Prices Data Dictionary
- <img src="https://github.com/user-attachments/assets/9e010651-7c47-4df2-8f1b-e93f6134bfe0" alt="Screenshot" width="800" height="250">
+
+ <img src="https://github.com/user-attachments/assets/9e010651-7c47-4df2-8f1b-e93f6134bfe0" alt="Screenshot" width="500" height="250">
+ 
 Car_Price Datasheet
-<img src="https://github.com/user-attachments/assets/7fb8bcd9-0c7b-4b23-9673-65dfd8f87838" alt="Screenshot" width="800" height="250">
+
+<img src="https://github.com/user-attachments/assets/7fb8bcd9-0c7b-4b23-9673-65dfd8f87838" alt="Screenshot" width="500" height="250">
+
 ##### Car_Price Datasheet (Cleaned)
 -The image below shows the edited datasheet where categorical variables have been removed for a cleaner and more effective analysis implementation.
-<img src="https://github.com/user-attachments/assets/9a8b1f9a-d9c6-42e3-845a-44c7e51e5403" alt="Screenshot" width="800" height="250">
+
+<img src="https://github.com/user-attachments/assets/9a8b1f9a-d9c6-42e3-845a-44c7e51e5403" alt="Screenshot" width="500" height="250">
