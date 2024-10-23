@@ -9,10 +9,10 @@ Linear and Logistic Regression are two common techniques used to predict outcome
 
 ### Linear Regression 
 Linear Regression is used when we want to predict a continuous value, (e.g the price of a car, temperature, or someone's age). The goal is to fit a straight line through the data, where the input factors (like mileage or engine size) help us estimate the output like the car’s price. It minimizes the difference between actual and predicted values, allowing us to use that line to make predictions for future data.
-
- <img src="https://github.com/user-attachments/assets/fb81331d-5981-48e2-8ee9-6434063ea3de" alt="Screenshot" width="500" height="150">
-
-Linear Graphing Example; GIF courtesy: Simplilearn
+ <img src="https://github.com/user-attachments/assets/fb81331d-5981-48e2-8ee9-6434063ea3de" alt="Screenshot" width="800" height="350">
+<p align="center">
+Linear Regression Example; GIF courtesy: Simplilearn
+</p>
 <img src="https://github.com/user-attachments/assets/cf6be845-444a-4ae3-abcb-2813f5bfe6de" width="500" height="150">
 
 
