@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a9203597-bea5-44ad-beaa-185612b35407" alt="Midterm Banner" width="2500" height="200">
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/71c254f9-2ffb-4ee2-add3-dd1cbbf00a92" alt="MB" width="2500" height="200">
 </p>
 
