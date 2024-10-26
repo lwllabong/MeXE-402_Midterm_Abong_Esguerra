@@ -72,7 +72,7 @@ Car_Price Datasheet
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
 
 <p align="left">
-  <img src=![training and test set-VEED](https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a) width="2500" height="200">
+  <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
 </p>
 
 
