@@ -71,7 +71,7 @@ Car_Price Datasheet
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
 
-<img src="https://github.com/user-attachments/assets/9e23575d-b8e3-4acf-93c8-0ebd85171a3b" alt="Description of the image" width="700" height="300" />
+<img src="https://github.com/user-attachments/assets/9e23575d-b8e3-4acf-93c8-0ebd85171a3b" alt="Video" width="700" height="300" />
 
 #### MODEL BUILDING AND TRAINING : 
 Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
