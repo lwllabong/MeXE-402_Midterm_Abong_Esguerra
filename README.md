@@ -71,6 +71,8 @@ Car_Price Datasheet
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
 
+Creating the Training and Test set
+
 <p align="left">
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
 </p>
@@ -78,6 +80,12 @@ Car_Price Datasheet
 
 #### MODEL BUILDING AND TRAINING : 
 Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
+
+##### For Linear Regression 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
+</p>
+
 #### MODEL EVALUATION: 
 To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared, which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics help assess the model’s ability to correctly classify data into categories.
 #### REAL-WORLD APPLICATION: 
