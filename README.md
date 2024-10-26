@@ -86,7 +86,7 @@ Developing linear regression approach that will predict a continuous or numerica
 </p>
 
 #### MODEL EVALUATION: 
-To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared, which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics help assess the model’s ability to correctly classify data into categories.
+To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
 
 ##### For Linear Regression 
 <p align="left">
