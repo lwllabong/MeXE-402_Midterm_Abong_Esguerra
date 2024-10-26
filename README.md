@@ -88,6 +88,12 @@ Developing linear regression approach that will predict a continuous or numerica
 
 #### MODEL EVALUATION: 
 To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared, which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics help assess the model’s ability to correctly classify data into categories.
+
+##### For Linear Regression 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="700" height="300" alt="Evaluating the model-VEED">
+</p>
+
 #### REAL-WORLD APPLICATION: 
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
 
