@@ -29,7 +29,7 @@ The dataset presents information on understanding the car features that actually
 ### PROJECT OBJECTIVES: 
 (WHAT YOU AIM TO ACHIEVE WITH YOUR ANALYSIS)
 #### DATA EXPLORATION: 
-Analyzing the provided datasets and conducting a thorough analysis of the required data for each scenario involving the application of linear and logistic regression. This includes data organization, cleaning, and the elimination of variables that may introduce obstacles or errors in the final implementation. The process culminates in the integration and application of the refined data to achieve the outcome.
+This phase involves organizing datasets, cleaning them to address missing values and outliers, and eliminating variables that may introduce noise or multicollinearity. The process includes defining independent (input) and dependent (output) variables, encoding categorical data, and applying feature scaling for standardization. The dataset is then split into training (70-80%) and test sets (20-30%) to facilitate model fitting and evaluation. This structured approach enables the application of linear or logistic regression models, with tuning and testing to achieve accurate predictive outcomes.
 
 ##### For Linear Regression (CAR PRICING ASSIGNMENT)
 
@@ -70,6 +70,8 @@ Car_Price Datasheet
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
+
+<img src="https://github.com/user-attachments/assets/9e23575d-b8e3-4acf-93c8-0ebd85171a3b" width="700" height="300" />
 
 #### MODEL BUILDING AND TRAINING : 
 Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
