@@ -38,7 +38,8 @@ The objectives of this project are:
    metrics.
 3. **Evaluate Model Performance**:
    - For Linear Regression: 
-   - For Logistic Regression: Evaluate with metrics like accuracy.
+   - For Logistic Regression: Evaluate with metrics like accuracy, precision, recall, and f1-
+     score. 
 4. **Interpret Model Results**:
    - Analyze how car attributes influence price.
    - Understand how satisfaction metrics impact the likelihood of an accurate order.
