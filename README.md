@@ -21,12 +21,28 @@ Logistic Regression, on the other hand, is used when we need to predict a catego
 ##### The main difference between the two is the kind of data they deal with—linear regression works for continuous outcomes, while logistic regression handles categorical outcomes. Both are key tools in making data-driven decisions, helping us spot trends and predict results based on available information.
 
 ### DATASET DESCRIPTION: 
-#### Linear Regression 
+### 1. Car Price Prediction Dataset (Linear)
 The dataset presents information on understanding the car features that actually influence the price of cars in various countries. In particular, it is the Chinese Automobile Company Geely Auto. They aspire to enter the US market by setting up their manufacturing unit there and producing cars locally. To achieve this, it is essential to identify and understand the factors influencing car pricing in the American market, as these factors may differ significantly from those in the Chinese market. Through the application of linear regression analysis, we can model car prices based on the available independent variables. This approach we can manipulate the design of the cars, the business strategy etc. to meet certain price levels. And this will be a good way for management to understand the pricing dynamics of a new market. 
-#### Logistic Regression
-The dataset comprises 10,616 entries, each representing a customer's feedback on various aspects of their experience. It includes five columns: a unique customer identifier, satisfaction ratings for the overall delivery experience, food quality, and delivery speed, as well as a binary response regarding order accuracy. The satisfaction ratings range from 1 to 5, where 1 indicates extreme dissatisfaction and 5 indicates extreme satisfaction. However, there are missing values in these columns, which may need to be addressed for a complete analysis. Additionally, the order accuracy column, which records responses as "Yes" or "No," also contains some missing entries. The presence of missing data suggests potential data quality issues that could influence the analysis. Overall, the structure of the dataset seems conducive to numerical and categorical analysis, allowing for exploration of customer satisfaction trends and relationships among variables like delivery speed, food quality, and order accuracy.
+### 2. Customer Satisfaction Dataset (Logistic Regression)
+The Customer Satisfaction Dataset, designed for logistic regression analysis, consists of 10,616 entries capturing customer feedback on delivery services. Key variables include Delivery Satisfaction, which is rated on a scale from 1 to 5 and reflects the overall delivery experience, and Food Quality Satisfaction, also rated from 1 to 5, indicating customer satisfaction with the quality of food received. The dataset’s target variable is Order Accuracy, a binary indicator of whether the order was accurate, with 0 representing an inaccurate order and 1 indicating an accurate one. This dataset is valuable for using logistic regression to explore and predict order accuracy based on satisfaction ratings, providing insights into the impact of delivery and food quality on customer perception of order accuracy.
+
 ### PROJECT OBJECTIVES: 
-(WHAT YOU AIM TO ACHIEVE WITH YOUR ANALYSIS)
+The objectives of this project are:
+1. **Understand the Fundamentals**: 
+   - Grasp the theoretical differences between Linear and Logistic Regression.
+   - Identify scenarios where each model is most applicable.
+2. **Build Predictive Models**:
+   - Apply **Linear Regression** to predict car prices based on engine performance and fuel
+   efficiency.
+   - Use **Logistic Regression** to classify order accuracy based on customer satisfaction
+   metrics.
+3. **Evaluate Model Performance**:
+   - For Linear Regression: 
+   - For Logistic Regression: Evaluate with metrics like accuracy.
+4. **Interpret Model Results**:
+   - Analyze how car attributes influence price.
+   - Understand how satisfaction metrics impact the likelihood of an accurate order.
+     
 #### DATA EXPLORATION: 
 This phase involves organizing datasets, cleaning them to address missing values and outliers, and eliminating variables that may introduce noise or multicollinearity. The process includes defining independent (input) and dependent (output) variables, encoding categorical data, and applying feature scaling for standardization. The dataset is then split into training (70-80%) and test sets (20-30%) to facilitate model fitting and evaluation. This structured approach enables the application of linear or logistic regression models, with tuning and testing to achieve accurate predictive outcomes.
 
