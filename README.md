@@ -36,16 +36,6 @@ The objectives of this project are:
 4. **Interpret Model Results**:
    - Analyze how car attributes influence price.
    - Understand how satisfaction metrics impact the likelihood of an accurate order.
-     
-#### DATA EXPLORATION: 
-This phase involves organizing datasets, cleaning them to address missing values and outliers, and eliminating variables that may introduce noise or multicollinearity. The process includes defining independent (input) and dependent (output) variables, encoding categorical data, and applying feature scaling for standardization. The dataset is then split into training (70-80%) and test sets (20-30%) to facilitate model fitting and evaluation. This structured approach enables the application of linear or logistic regression models, with tuning and testing to achieve accurate predictive outcomes.
-
-#### MODEL BUILDING AND TRAINING : 
-Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
-
-#### MODEL EVALUATION: 
-To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
-
 
 ### For Linear Regression (CAR PRICING ASSIGNMENT)
 
