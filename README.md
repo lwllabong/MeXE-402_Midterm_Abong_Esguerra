@@ -326,43 +326,47 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (data.csv), is then loaded into a pandas DataFrame called dataset, making it easier to explore and manipulate.
 * Creates a copy of the original dataset, named data_filled, which will be used for data cleaning.
-<s![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)s>
+<![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)>
 
 ###### 2. Handling Missing Values:
 * Numeric Columns: Missing values in columns 1 to 3 are filled with the mean of each column, a common approach to maintain data consistency for numeric features.
-<ss>
+<![image](https://github.com/user-attachments/assets/dc84f4ee-753a-49c4-aefb-06a332f37bd8)>
 * Categorical Column: For the column “Was your order accurate?,” missing values are filled with the mode (most frequent value). This step ensures that categorical data has no null entries, which is essential for model training.
-<ss>
+<![image](https://github.com/user-attachments/assets/690665ac-a1e3-4ce6-a601-ef0ab04d2519)>
 
 ###### 3. Verification of Missing Data:
 * Prints the count of missing values in each column to ensure that they have been filled.
 * isna().sum() is used to print the number of missing values in each column, allowing us to verify that all missing values have been filled.
-<ss>
+<![image](https://github.com/user-attachments/assets/f45b7f71-2801-4133-8d59-a25b16f85dc2)>
 
 ###### 4. Encoding the target column as binary values:
 * The target column, “Was your order accurate?,” is encoded into binary values: Yes becomes 1, and No becomes 0. Encoding is necessary as logistic regression requires numerical values rather than text labels.
-<ss>
+<![image](https://github.com/user-attachments/assets/aefea16e-329a-4a5b-a5ee-b6d4309c759e)>
 
 ###### 5. Preview Data:
 * The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
-<ss>
+<![image](https://github.com/user-attachments/assets/2ff50cd7-da26-44ec-b763-cd123d836177)>
 
 ###### 6. Check Data Info:
 * Provides summary information about the dataset, including column names, data types, and memory usage.
-<ss>
+<![image](https://github.com/user-attachments/assets/314d099d-0d03-45e4-ba8a-95da1ee29bcc)>
+<![image](https://github.com/user-attachments/assets/b093b0c5-4ef8-43b1-850b-4420455ad631)>
+<![image](https://github.com/user-attachments/assets/bb9dcc4a-acbd-4cc7-886c-eca5c748ef18)>
+<![image](https://github.com/user-attachments/assets/64389050-1274-4e3d-90a7-17968d7e4690)>
+<![image](https://github.com/user-attachments/assets/97a528c9-ed19-4c4a-ac32-6f9ea9978762)>
 
 ###### 7. Getting inputs and output:
 * Features (X) and the target variable (y) are separated. This is essential for building and training the model, where X represents input variables and y is the output variable the model will predict.
-<ss>
+<![image](https://github.com/user-attachments/assets/8941238e-f86b-4ecf-946d-e93ef0f1e16a)>
 
 ###### 8. Class Distribution Check:
 * The distribution of target classes is checked to identify any imbalance. Class imbalance can negatively affect model performance by biasing predictions towards the majority class.
-<ss>
+<![image](https://github.com/user-attachments/assets/b830872e-c626-485d-b382-72e69a74a27e)>
 
 ###### 9. Data Splitting and Resampling:
 * The data is split into training and test sets using train_test_split, with 30% allocated for testing and stratification to preserve the class distribution.
 * SMOTE (Synthetic Minority Over-sampling Technique) is applied to the training set to handle class imbalance. SMOTE creates synthetic samples of the minority class, balancing the class distribution and helping the model learn features of both classes more effectively.
-<ss>
+<![image](https://github.com/user-attachments/assets/60557a56-c55b-4603-9290-31271674dcb9)>
 
 ##### Part 2: Building and Training the Model
 This part involves selecting and training the machine learning model. Here, we initialize a logistic regression model and train it using the preprocessed and balanced dataset.
