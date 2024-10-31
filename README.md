@@ -251,6 +251,18 @@ The model evaluation shows that the model performs reasonably well, as indicated
   <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="700" height="300" alt="Evaluating the model-VEED">
 </p>
 
+##### Result of 2nd Analysis
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/3f68bad8-1fcd-430b-9e00-ec35cc33a4da" width="700" height="300" alt="PART 3-VEED">
+</p>
+
+1. The R² value here is approximately 0.818, meaning about 81.8% of the variance in the target variable can be explained by the model’s predictors.
+2. The Adjusted R² result here is approximately 0.731, meaning about 73.1% modifies the R² value by penalizing the model for including irrelevant features that do not improve the prediction.
+
+###### Comparison and Interpretation
+* It is possible for R² to be higher than Adjusted R², especially when the number of predictors (k) increases. Adjusted R² penalizes R² based on the number of predictors to prevent overfitting, which is why it’s often slightly lower than R² when there are multiple predictors.
+* In this example, the difference between R² (0.818) and Adjusted R² (0.731) indicates that while the model explains a good amount of variance, the Adjusted R² suggests some predictors may not be contributing significant information, hence the penalty.
+
 #### REAL-WORLD APPLICATION: 
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
 
