@@ -26,12 +26,11 @@ The objectives of this project are:
    - Grasp the theoretical differences between Linear and Logistic Regression.
    - Identify scenarios where each model is most applicable.
 2. **Build Predictive Models**:
-   - Apply **Linear Regression** to predict car prices based on engine performance and fuel
-   efficiency.
+   - Apply **Linear Regression** to predict car prices based on the independents given.
    - Use **Logistic Regression** to classify order accuracy based on customer satisfaction
    metrics.
 3. **Evaluate Model Performance**:
-   - For Linear Regression: 
+   - For Linear Regression: Evaluate with metrics like r2 and adjusted r2.
    - For Logistic Regression: Evaluate with metrics like accuracy, precision, recall, and f1-
      score. 
 4. **Interpret Model Results**:
