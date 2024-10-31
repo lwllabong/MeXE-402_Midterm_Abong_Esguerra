@@ -173,9 +173,62 @@ This process helps create separate training and test datasets:
 Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
 
 ##### For Linear Regression 
+
+##### Building and Training the Model 
+This is where a linear regression model is being built, trained, and used for inference.
+
+##### Here's an explanation of the steps (based on the shown figure below) :
+
+###### 1. Building the Model:
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+
+* This code imports the LinearRegression class from the sklearn.linear_model module (part of the popular Scikit-learn library).
+* Then, an instance of the LinearRegression() model is created and stored in the model variable. This prepares the linear regression model, which will later be trained on data.
+
+###### 2. Training the Model:
+model.fit(X_train, y_train)
+
+* In this step, the linear regression model (model) is trained using the fit() method.
+* X_train is the input data (features) used to train the model, and y_train is the target output (labels).
+* The fit() method estimates the best-fitting line (in case of one feature) or hyperplane (if there are multiple features) for the training data.
+
+###### 3. Interference
+y_pred = model.predict(X_test)
+y_pred
+
+* Making Predictions:
+
+- The predict() method is used to generate predictions based on the unseen test data (X_test). This test dataset contains new data points for which the model hasn’t seen the target variable.
+- The variable y_pred stores the predicted values for X_test. These are the output (dependent variable) estimates that the model believes to be correct based on the relationships it learned during training.
+
+* Predicted Output:
+
+- The output shows an array of predicted values for the test data points. These values represent the model’s estimations based on the input features from X_test. For instance:
+[6685.3704445, 18685.04379745, 15824.2008859, 129.99461763, ...]
+These numbers represents car prices of the dataset.
+
+##### Inference with a Single Data Point:
+model.predict([[1,88.6,168.8,64.1,48.8,2548,130,3.47,2.68,9,111,5000,21,27]])
+
+* Predicting for a Single Data Point:
+
+- This line makes a prediction using a specific, single instance of data (a row of features).
+- The predict() method takes in a list of features that match the structure of the training data. In this case, a list is passed with values like:
+  [1, 88.6, 168.8, 64.1, 48.8, 2548, 130, 3.47, 2.68, 9, 111, 5000, 21, 27]
+- These numbers are most likely the feature values for various characteristics that the model will use to predict the target variable (car price).
+
+* Predicted Value for the Single Data Point:
+The result of this prediction is shown as: array([14628.18813458])
+* This means that based on the input features provided, the model predicts a value of approximately 14628.19 for the target variable (car price).
+
 <p align="left">
   <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
 </p>
+
+###### Summary:
+* The first part of the inference shows predictions made for multiple data points (stored in X_test) using the trained linear regression model.
+* The second part shows how you can make a prediction for a single, manually entered data point by passing a list of values to model.predict().
 
 #### MODEL EVALUATION: 
 To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
