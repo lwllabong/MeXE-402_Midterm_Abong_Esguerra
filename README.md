@@ -311,12 +311,14 @@ overall delivery satisfaction, and
 food quality satisfaction
 
 ##### Customer Satisfaction Data  
+The dataset includes the following columns:
+* Customer: Likely a unique identifier for each entry.
+* Overall Delivery Satisfaction (1-5 scale): Satisfaction with the delivery experience.
+* Food Quality Satisfaction (1-5 scale): Satisfaction with the food quality.
+* Delivery Speed Satisfaction (1-5 scale): Satisfaction with delivery speed.
+* Order Accuracy (1 = Yes, 0 = No): Whether the order was accurate.
 Preview
 ![image](https://github.com/user-attachments/assets/c9e27966-3cea-4dc1-9578-890b8ea85b5d)
-
-##### Customer Satisfaction Datasheet (Filled and Balanced)
-The image below shows the filled datasheet, missing values has been replaced in columns 1 to 3 (likely numerical) with their column means. Also, the missing values of the target variable here has been filled  with the the column mode. Aditionally, this updated datasheet shows the balanced classes of the target variable.
-<ss>
 
 #### METHODOLOGY: Documented steps taken during analysis.
 
