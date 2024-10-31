@@ -373,12 +373,12 @@ This part involves selecting and training the machine learning model. Here, we i
 
 ###### 1. Logistic Regression Model Initialization
 * A logistic regression model is initialized with liblinear as the solver, suitable for smaller datasets or binary classification tasks.
-<ss>
+<![image](https://github.com/user-attachments/assets/ae86e949-1c3c-4309-9086-aff1f2d3fdea)>
 
 ###### 2. Model Training
 * The model is trained using the resampled training data (X_train_res and y_train_res). During this step, the model learns relationships between the input features (X_train_res) and the target variable (y_train_res).
 Part 3: Evaluating the Model
-<ss>
+<![image](https://github.com/user-attachments/assets/761fc471-5c95-491e-b6c2-9168eb39e385)>
 
 ##### Part 3 - Evaluating the Model
 In this stage, we assess the model's performance to understand how well it can predict the target variable. Evaluation metrics help us interpret accuracy, balance, and reliability.
@@ -389,11 +389,12 @@ In this stage, we assess the model's performance to understand how well it can p
   Precision: The proportion of true positive predictions among all positive predictions.
   Recall: The proportion of true positives among all actual positives.
   F1 Score: The harmonic mean of precision and recall, which balances the two metrics.
-<ss>
+<![image](https://github.com/user-attachments/assets/38d34eff-9914-4471-9f2a-3213432f0ec7)>
 
 ###### 2. Confusion Matrix
 * The confusion matrix is printed to show counts of true positives, true negatives, false positives, and false negatives. This helps understand where the model is making errors and if there’s any bias toward one class. A Confusion Matrix Display is also provided.
-<ss>
+<![image](https://github.com/user-attachments/assets/f92822e8-af7f-4e80-ad58-fbb97efcc17a)>
+![image](https://github.com/user-attachments/assets/ed2749a2-7274-4fe3-ab34-4fb02b915678)
 
 ###### 3. Accuracy Calculation
 * Manual Calculation: The accuracy is manually calculated using specific values from the confusion matrix.
