@@ -174,7 +174,7 @@ This is where a linear regression model is being built, trained, and used for in
 ##### Here's an explanation of the steps (based on the shown figure below) :
 
 ###### 1. Building the Model: 
-(Scikit-learn, or sklearn, offers a range of efficient tools for data preprocessing, model selection, and evaluation, making it ideal for building and testing machine learning models. With features for handling missing values, scaling data, splitting datasets, and calculating performance metrics, Scikit-learn simplifies the workflow for creating predictive models, all with a straightforward and user-friendly interface.)
+From the code below, imports the LinearRegression class from Scikit-learn's linear_model module. This library provides efficient machine learning algorithms and tools, and LinearRegression is a core component for building linear regression models.
 
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
