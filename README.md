@@ -326,7 +326,7 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (data.csv), is then loaded into a pandas DataFrame called dataset, making it easier to explore and manipulate.
 * Creates a copy of the original dataset, named data_filled, which will be used for data cleaning.
-<ss>
+<s![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)s>
 
 ###### 2. Handling Missing Values:
 * Numeric Columns: Missing values in columns 1 to 3 are filled with the mean of each column, a common approach to maintain data consistency for numeric features.
