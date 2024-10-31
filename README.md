@@ -317,7 +317,7 @@ The dataset includes the following columns:
 * Food Quality Satisfaction (1-5 scale): Satisfaction with the food quality.
 * Delivery Speed Satisfaction (1-5 scale): Satisfaction with delivery speed.
 * Order Accuracy (1 = Yes, 0 = No): Whether the order was accurate.
-Preview
+  * Preview
 ![image](https://github.com/user-attachments/assets/c9e27966-3cea-4dc1-9578-890b8ea85b5d)
 
 #### METHODOLOGY: Documented steps taken during analysis.
