@@ -326,59 +326,59 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (data.csv), is then loaded into a pandas DataFrame called dataset, making it easier to explore and manipulate.
 * Creates a copy of the original dataset, named data_filled, which will be used for data cleaning.
-<![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)>
+![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)
 
 ###### 2. Handling Missing Values:
 * Numeric Columns: Missing values in columns 1 to 3 are filled with the mean of each column, a common approach to maintain data consistency for numeric features.
-<![image](https://github.com/user-attachments/assets/dc84f4ee-753a-49c4-aefb-06a332f37bd8)>
+![image](https://github.com/user-attachments/assets/dc84f4ee-753a-49c4-aefb-06a332f37bd8)
 * Categorical Column: For the column “Was your order accurate?,” missing values are filled with the mode (most frequent value). This step ensures that categorical data has no null entries, which is essential for model training.
-<![image](https://github.com/user-attachments/assets/690665ac-a1e3-4ce6-a601-ef0ab04d2519)>
+![image](https://github.com/user-attachments/assets/690665ac-a1e3-4ce6-a601-ef0ab04d2519)
 
 ###### 3. Verification of Missing Data:
 * Prints the count of missing values in each column to ensure that they have been filled.
 * isna().sum() is used to print the number of missing values in each column, allowing us to verify that all missing values have been filled.
-<![image](https://github.com/user-attachments/assets/f45b7f71-2801-4133-8d59-a25b16f85dc2)>
+![image](https://github.com/user-attachments/assets/f45b7f71-2801-4133-8d59-a25b16f85dc2)
 
 ###### 4. Encoding the target column as binary values:
 * The target column, “Was your order accurate?,” is encoded into binary values: Yes becomes 1, and No becomes 0. Encoding is necessary as logistic regression requires numerical values rather than text labels.
-<![image](https://github.com/user-attachments/assets/aefea16e-329a-4a5b-a5ee-b6d4309c759e)>
+![image](https://github.com/user-attachments/assets/aefea16e-329a-4a5b-a5ee-b6d4309c759e)
 
 ###### 5. Preview Data:
 * The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
-<![image](https://github.com/user-attachments/assets/2ff50cd7-da26-44ec-b763-cd123d836177)>
+![image](https://github.com/user-attachments/assets/2ff50cd7-da26-44ec-b763-cd123d836177)
 
 ###### 6. Check Data Info:
 * Provides summary information about the dataset, including column names, data types, and memory usage.
-<![image](https://github.com/user-attachments/assets/314d099d-0d03-45e4-ba8a-95da1ee29bcc)>
-<![image](https://github.com/user-attachments/assets/b093b0c5-4ef8-43b1-850b-4420455ad631)>
-<![image](https://github.com/user-attachments/assets/bb9dcc4a-acbd-4cc7-886c-eca5c748ef18)>
-<![image](https://github.com/user-attachments/assets/64389050-1274-4e3d-90a7-17968d7e4690)>
-<![image](https://github.com/user-attachments/assets/97a528c9-ed19-4c4a-ac32-6f9ea9978762)>
+![image](https://github.com/user-attachments/assets/314d099d-0d03-45e4-ba8a-95da1ee29bcc)
+![image](https://github.com/user-attachments/assets/b093b0c5-4ef8-43b1-850b-4420455ad631)
+![image](https://github.com/user-attachments/assets/bb9dcc4a-acbd-4cc7-886c-eca5c748ef18)
+![image](https://github.com/user-attachments/assets/64389050-1274-4e3d-90a7-17968d7e4690)
+![image](https://github.com/user-attachments/assets/97a528c9-ed19-4c4a-ac32-6f9ea9978762)
 
 ###### 7. Getting inputs and output:
 * Features (X) and the target variable (y) are separated. This is essential for building and training the model, where X represents input variables and y is the output variable the model will predict.
-<![image](https://github.com/user-attachments/assets/8941238e-f86b-4ecf-946d-e93ef0f1e16a)>
+![image](https://github.com/user-attachments/assets/8941238e-f86b-4ecf-946d-e93ef0f1e16a)
 
 ###### 8. Class Distribution Check:
 * The distribution of target classes is checked to identify any imbalance. Class imbalance can negatively affect model performance by biasing predictions towards the majority class.
-<![image](https://github.com/user-attachments/assets/b830872e-c626-485d-b382-72e69a74a27e)>
+![image](https://github.com/user-attachments/assets/b830872e-c626-485d-b382-72e69a74a27e)
 
 ###### 9. Data Splitting and Resampling:
 * The data is split into training and test sets using train_test_split, with 30% allocated for testing and stratification to preserve the class distribution.
 * SMOTE (Synthetic Minority Over-sampling Technique) is applied to the training set to handle class imbalance. SMOTE creates synthetic samples of the minority class, balancing the class distribution and helping the model learn features of both classes more effectively.
-<![image](https://github.com/user-attachments/assets/60557a56-c55b-4603-9290-31271674dcb9)>
+![image](https://github.com/user-attachments/assets/60557a56-c55b-4603-9290-31271674dcb9)
 
 ##### Part 2: Building and Training the Model
 This part involves selecting and training the machine learning model. Here, we initialize a logistic regression model and train it using the preprocessed and balanced dataset.
 
 ###### 1. Logistic Regression Model Initialization
 * A logistic regression model is initialized with liblinear as the solver, suitable for smaller datasets or binary classification tasks.
-<![image](https://github.com/user-attachments/assets/ae86e949-1c3c-4309-9086-aff1f2d3fdea)>
+![image](https://github.com/user-attachments/assets/ae86e949-1c3c-4309-9086-aff1f2d3fdea)
 
 ###### 2. Model Training
 * The model is trained using the resampled training data (X_train_res and y_train_res). During this step, the model learns relationships between the input features (X_train_res) and the target variable (y_train_res).
 Part 3: Evaluating the Model
-<![image](https://github.com/user-attachments/assets/761fc471-5c95-491e-b6c2-9168eb39e385)>
+![image](https://github.com/user-attachments/assets/761fc471-5c95-491e-b6c2-9168eb39e385)
 
 ##### Part 3 - Evaluating the Model
 In this stage, we assess the model's performance to understand how well it can predict the target variable. Evaluation metrics help us interpret accuracy, balance, and reliability.
@@ -389,11 +389,11 @@ In this stage, we assess the model's performance to understand how well it can p
   Precision: The proportion of true positive predictions among all positive predictions.
   Recall: The proportion of true positives among all actual positives.
   F1 Score: The harmonic mean of precision and recall, which balances the two metrics.
-<![image](https://github.com/user-attachments/assets/38d34eff-9914-4471-9f2a-3213432f0ec7)>
+![image](https://github.com/user-attachments/assets/38d34eff-9914-4471-9f2a-3213432f0ec7)
 
 ###### 2. Confusion Matrix
 * The confusion matrix is printed to show counts of true positives, true negatives, false positives, and false negatives. This helps understand where the model is making errors and if there’s any bias toward one class. A Confusion Matrix Display is also provided.
-<![image](https://github.com/user-attachments/assets/f92822e8-af7f-4e80-ad58-fbb97efcc17a)>
+![image](https://github.com/user-attachments/assets/f92822e8-af7f-4e80-ad58-fbb97efcc17a)
 ![image](https://github.com/user-attachments/assets/ed2749a2-7274-4fe3-ab34-4fb02b915678)
 
 ###### 3. Accuracy Calculation
