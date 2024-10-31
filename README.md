@@ -90,7 +90,7 @@ Steps in Data Preprocessing (as shown in the image below):
 * The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
 
 ###### Initial Exploration:
-The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
+* The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
 
 ###### Understanding Features and Target:
 * The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we might want to predict.
@@ -98,6 +98,30 @@ The dataset.head(10) function displays the first 10 rows of the dataset. This in
 
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
+##### Getting input and output
+It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
+
+###### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
+
+###### Selecting Inputs (Independent Variables):
+
+* The line X = dataset.iloc[:, :-1].values selects all rows (:) and all columns except the last one (:-1) from the dataset.
+* Here, dataset.iloc[:, :-1] uses the .iloc function, which allows for selection by index position. By specifying :-1, it includes all columns except the last one.
+* .values converts the resulting selection into a NumPy array.
+* This array X will contain all the features (independent variables) used for the model, excluding the target variable.
+
+###### Selecting Output (Dependent Variable):
+
+* The line y = dataset.iloc[:, -1].values selects all rows (:) and only the last column (-1) from the dataset.
+* dataset.iloc[:, -1] refers to the last column, which is assumed to be the target variable (price) in this case.
+* .values again converts this selection into a NumPy array.
+* This array y contains the values of the dependent variable, which is the car price that the model will try to predict.
+* 
+##### Summary
+###### X (input), 
+includes all features except the target variable (price).
+###### y (output),
+includes only the price values, which is the variable we're aiming to predict with a regression model.
 
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
 
