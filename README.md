@@ -301,9 +301,6 @@ The model's predictive power is measured primarily by metrics like R-squared (R�
 
 Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
 
-#### REAL-WORLD APPLICATION: 
-The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
-
 #### Logistic Regression (CUSTOMER SATISFACTION)
 
 ##### Dependent variable (y):
@@ -396,3 +393,6 @@ In this stage, we assess the model's performance to understand how well it can p
 * Manual Calculation: The accuracy is manually calculated using specific values from the confusion matrix.
 * Alternative Calculation Using accuracy_score: For verification, accuracy is also calculated using the accuracy_score function from sklearn, which provides a quick way to confirm the accuracy score.
 <ss>
+
+#### REAL-WORLD APPLICATION: 
+The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
