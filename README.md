@@ -398,8 +398,10 @@ In this stage, we assess the model's performance to understand how well it can p
 
 ###### 3. Accuracy Calculation
 * Manual Calculation: The accuracy is manually calculated using specific values from the confusion matrix.
+![image](https://github.com/user-attachments/assets/8d668a4b-7d52-4da9-95a0-6824588f8520)
 * Alternative Calculation Using accuracy_score: For verification, accuracy is also calculated using the accuracy_score function from sklearn, which provides a quick way to confirm the accuracy score.
-<ss>
+![image](https://github.com/user-attachments/assets/aed07101-e3f6-48eb-90bf-7e5398aa1f02)
+
 
 #### RESULTS: Summarized findings
 Based on the Methodology, here’s a summary of the findings and model results:
