@@ -81,9 +81,9 @@ Car_Price Datasheet
 
 ##### Data Preprocessing at VSCode
 
-Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. In the context of the image you shared, it looks like the initial steps of data preprocessing involve importing and inspecting a dataset of this car price assignment attributes to make it ready for further analysis.
+Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. 
 
-Steps in Data Preprocessing (as shown in the image below):
+##### Steps in Data Preprocessing (as shown in the image below):
 
 ###### Importing Libraries and Dataset:
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
@@ -93,15 +93,14 @@ Steps in Data Preprocessing (as shown in the image below):
 * The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
 
 ###### Understanding Features and Target:
-* The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we might want to predict.
-* Identifying the target variable is an important part of preprocessing, as it guides feature selection and further steps.
+* The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we need to predict.
 
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
 ##### Getting input and output
 It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
 
-###### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
+##### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
 
 ###### Selecting Inputs (Independent Variables):
 
@@ -116,7 +115,7 @@ It is the process for selecting the input (independent variables) and output (de
 * dataset.iloc[:, -1] refers to the last column, which is assumed to be the target variable (price) in this case.
 * .values again converts this selection into a NumPy array.
 * This array y contains the values of the dependent variable, which is the car price that the model will try to predict.
-* 
+  
 ##### Summary
 ###### X (input),
 includes all features except the target variable (price).
@@ -145,15 +144,16 @@ includes only the price values, which is the variable we're aiming to predict wi
 * y represents the target variable (dependent variable).
 * test_size=0.2 specifies that 20% of the data should be used for testing, while the remaining 80% will be used for training.
 * random_state=0 is a seed value that ensures the split is reproducible (the same split occurs every time the code is run).
+  
 ###### Resulting Variables:
-
 * X_train and y_train: These arrays contain 80% of the data, which will be used to train the model.
 * X_test and y_test: These arrays contain the remaining 20% of the data, which will be used to evaluate the model's performance.
 
 ###### Example Output of Split Data
 * X_train: This is the part of the X array that is used for training the model. The content is a subset of the original data, containing 80% of the rows.
 * X_test: This is the part of the X array used for testing the model, containing the remaining 20% of rows.
-Similarly:
+
+###### Similarly:
 
 * y_train: This would be the corresponding 80% subset of the y array (target variable values) used for training.
 * y_test: This is the corresponding 20% subset of the y array used for testing.
