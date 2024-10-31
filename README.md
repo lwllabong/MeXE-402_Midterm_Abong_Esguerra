@@ -40,7 +40,14 @@ The objectives of this project are:
 #### DATA EXPLORATION: 
 This phase involves organizing datasets, cleaning them to address missing values and outliers, and eliminating variables that may introduce noise or multicollinearity. The process includes defining independent (input) and dependent (output) variables, encoding categorical data, and applying feature scaling for standardization. The dataset is then split into training (70-80%) and test sets (20-30%) to facilitate model fitting and evaluation. This structured approach enables the application of linear or logistic regression models, with tuning and testing to achieve accurate predictive outcomes.
 
-##### For Linear Regression (CAR PRICING ASSIGNMENT)
+#### MODEL BUILDING AND TRAINING : 
+Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
+
+#### MODEL EVALUATION: 
+To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
+
+
+### For Linear Regression (CAR PRICING ASSIGNMENT)
 
 ###### (Y= CarPrice; dependent variable) 
 ###### independent variables:
@@ -161,11 +168,6 @@ This process helps create separate training and test datasets:
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
 </p>
 
-#### MODEL BUILDING AND TRAINING : 
-Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
-
-##### For Linear Regression 
-
 ### MODEL IMPLEMENTATION
 
 #### Building and Training the Model 
@@ -173,7 +175,7 @@ This is where a linear regression model is being built, trained, and used for in
 
 ##### Here's an explanation of the steps (based on the shown figure below) :
 
-###### 1. Building the Model: 
+#### 1. Building the Model: 
 From the code below, imports the LinearRegression class from Scikit-learn's linear_model module. This library provides efficient machine learning algorithms and tools, and LinearRegression is a core component for building linear regression models.
 
 from sklearn.linear_model import LinearRegression
@@ -182,14 +184,14 @@ model = LinearRegression()
 * This code imports the LinearRegression class from the sklearn.linear_model module (part of the popular Scikit-learn library).
 * Then, an instance of the LinearRegression() model is created and stored in the model variable. This prepares the linear regression model, which will later be trained on data.
 
-###### 2. Training the Model:
+#### 2. Training the Model:
 model.fit(X_train, y_train)
 
 * In this step, the linear regression model (model) is trained using the fit() method.
 * X_train is the input data (features) used to train the model, and y_train is the target output (labels).
 * The fit() method estimates the best-fitting line (in case of one feature) or hyperplane (if there are multiple features) for the training data.
 
-###### 3. Interference
+#### 3. Interference
 y_pred = model.predict(X_test)
 y_pred
 
@@ -204,19 +206,19 @@ y_pred
 [6685.3704445, 18685.04379745, 15824.2008859, 129.99461763, ...]
 These numbers represents car prices of the dataset.
 
-##### Inference with a Single Data Point:
-model.predict([[1,88.6,168.8,64.1,48.8,2548,130,3.47,2.68,9,111,5000,21,27]])
+#### Inference with a Single Data Point:
+model.predict([[88.6,168.8,64.1,48.8,2548,130,3.47,2.68,9,111,5000,21,27]])
 
 * Predicting for a Single Data Point:
 
 - This line makes a prediction using a specific, single instance of data (a row of features).
 - The predict() method takes in a list of features that match the structure of the training data. In this case, a list is passed with values like:
-  [1, 88.6, 168.8, 64.1, 48.8, 2548, 130, 3.47, 2.68, 9, 111, 5000, 21, 27]
+  [ 88.6, 168.8, 64.1, 48.8, 2548, 130, 3.47, 2.68, 9, 111, 5000, 21, 27]
 - These numbers are most likely the feature values for various characteristics that the model will use to predict the target variable (car price).
 
 * Predicted Value for the Single Data Point:
-The result of this prediction is shown as: array([14628.18813458])
-* This means that based on the input features provided, the model predicts a value of approximately 14628.19 for the target variable (car price).
+The result of this prediction is shown as: array([13162.35799226])
+* This means that based on the input features provided, the model predicts a value of approximately 13162.36 for the target variable (car price).
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
@@ -232,11 +234,6 @@ The result of this prediction is shown as: array([14628.18813458])
 ###### Summary:
 * The first part of the inference shows predictions made for multiple data points (stored in X_test) using the trained linear regression model.
 * The second part shows how you can make a prediction for a single, manually entered data point by passing a list of values to model.predict().
-
-#### MODEL EVALUATION: 
-To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
-
-##### For Linear Regression 
 
 ### EVALUATION METRICS
 
@@ -263,7 +260,7 @@ The model evaluation shows that the model performs reasonably well, as indicated
 
 ###### Comparison and Interpretation
 * It is possible for R² to be higher than Adjusted R², especially when the number of predictors (k) increases. Adjusted R² penalizes R² based on the number of predictors to prevent overfitting, which is why it’s often slightly lower than R² when there are multiple predictors.
-* In this example, the difference between R² (0.818) and Adjusted R² (0.731) indicates that while the model explains a good amount of variance, the Adjusted R² suggests some predictors may not be contributing significant information, hence the penalty.
+* In this, the difference between R² (0.818) and Adjusted R² (0.731) indicates that while the model explains a good amount of variance, the Adjusted R² suggests some predictors may not be contributing significant information, hence the penalty.
 
 ### INTERPRETATION 
 
@@ -300,6 +297,7 @@ Each coefficient’s significance level (p-value) is crucial to determine whethe
 The model's predictive power is measured primarily by metrics like R-squared (R²) and Adjusted R-squared. R² indicates the percentage of variance in car prices explained by the independent variables, with a high R² value, close to 1, suggesting that the model captures most of the variability in car prices, demonstrating strong predictive power. However, if R² is low, this suggests that other unmeasured factors may influence price.
 
 Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
+
 
 ### LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
 
