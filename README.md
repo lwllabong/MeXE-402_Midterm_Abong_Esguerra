@@ -301,21 +301,23 @@ The model's predictive power is measured primarily by metrics like R-squared (R�
 
 Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
 
-#### Logistic Regression (CUSTOMER SATISFACTION)
+### LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
 
 ##### Dependent variable (y):
-Order Accuracy
+Order accuracy
 ##### Independent variables (X):
-delivery speed satisfaction
-overall delivery satisfaction
+Delivery speed satisfaction, 
+overall delivery satisfaction, and 
 food quality satisfaction
 
-##### Order Accuracy Data  
+##### Customer Satisfaction Data  
 <ss>
 
-##### Order_Accuracy Datasheet (Filled and Balanced)
--The image below shows the filled datasheet, missing values has been replaced in columns 1 to 3 (likely numerical) with their column means. Also, the missing values of the target variable here has been filled  with the the column mode. Aditionally, this updated datasheet shows the balanced classes of the target variable.
+##### Customer Satisfaction Datasheet (Filled and Balanced)
+The image below shows the filled datasheet, missing values has been replaced in columns 1 to 3 (likely numerical) with their column means. Also, the missing values of the target variable here has been filled  with the the column mode. Aditionally, this updated datasheet shows the balanced classes of the target variable.
 <ss>
+
+#### METHODOLOGY: Documented steps taken during analysis.
 
 ##### Part 1: Data Preprocessing
 Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. 
@@ -394,5 +396,83 @@ In this stage, we assess the model's performance to understand how well it can p
 * Alternative Calculation Using accuracy_score: For verification, accuracy is also calculated using the accuracy_score function from sklearn, which provides a quick way to confirm the accuracy score.
 <ss>
 
-#### REAL-WORLD APPLICATION: 
+#### RESULTS: Summarized findings
+Based on the Methodology, here’s a summary of the findings and model results:
+
+###### 1. Data Preprocessing:
+* Missing values were successfully filled using the mean for numeric columns and the mode for the categorical target column.
+* The target variable was encoded into binary values (1 for "Yes" and 0 for "No"), making it suitable for logistic regression.
+* Class imbalance was observed and addressed with SMOTE, ensuring that both classes were represented equally in the training data.
+
+###### 2. Model Training:
+* A logistic regression model was built and trained on the resampled (balanced) dataset. This model aims to predict the accuracy of orders based on input features, which were split into training and test sets.
+
+###### 3. Model Evaluation:
+* The classification report indicated metrics such as precision, recall, and F1-score for both classes.
+  * Precision: Measures the proportion of true positive predictions to the total positive predictions (both true and false positives).
+      * For class "0": 0.28 (low precision, indicating many false positives)
+      * For class "1": 0.75 (high precision, meaning fewer false positives)
+  * Recall: Measures the proportion of true positive predictions out of all actual positives.
+      * For class "0": 0.53 (only about half of actual "0" instances are correctly identified)
+      * For class "1": 0.50 (half of the "1" instances are correctly identified)
+  * F1-Score: The harmonic mean of precision and recall, balancing both metrics. A higher F1 score suggests better balance.
+      * For class "0": 0.37
+      * For class "1": 0.60
+  * Macro Average: An unweighted average of precision, recall, and F1 scores across classes.
+    * Precision: 0.51
+    * Recall: 0.52
+    * F1 Score: 0.49
+  * Weighted Average: A weighted average of the metrics across classes, taking into account the support (number of instances) for each class.
+    * Precision: 0.62
+    * Recall: 0.51
+    * F1 Score: 0.54
+* The confusion matrix provided a detailed breakdown of true positives, true negatives, false positives, and false negatives, showing how well the model predicted each class.
+  * Structure of the Confusion Matrix
+      * True Label: Rows represent the actual labels (ground-truth values) in the dataset.
+        * Row 0 represents instances that are actually class "0."
+        * Row 1 represents instances that are actually class "1."
+      * Predicted Label: Columns represent the model’s predictions.
+        * Column 0 represents instances predicted as class "0."
+        * Column 1 represents instances predicted as class "1."
+  * Values in the Matrix
+      * True Negatives (TN) (Top-left: 456):
+        * These are cases where the actual label is "0," and the model correctly predicted "0."
+        * There are 456 true negative predictions.
+      * False Positives (FP) (Top-right: 398):
+        * These are cases where the actual label is "0," but the model incorrectly predicted "1."
+        * There are 398 false positive predictions.
+      * False Negatives (FN) (Bottom-left: 1156):
+        * These are cases where the actual label is "1," but the model incorrectly predicted "0."
+        * There are 1156 false negative predictions.
+      * True Positives (TP) (Bottom-right: 1175):
+        * These are cases where the actual label is "1," and the model correctly predicted "1."
+        * There are 1175 true positive predictions.
+* The accuracy score (calculated manually and verified using accuracy_score) summarized the model's overall performance, indicating how many predictions were correct out of the total predictions made.
+  * Overall Accuracy: The proportion of correct predictions for the entire dataset, which is 0.51 or 51%.
+     
+#### DISCUSSION: Reflection from the results and the encountered limitations.
+The results suggests that the model is not effectively learning to distinguish between the two classes. Although it’s making some correct predictions for each class, the number of incorrect predictions (both false positives and false negatives) is quite high. This points to several potential issues:
+* High Misclassification Rates:
+  * There are 398 false positives and 1156 false negatives, which means the model is frequently confusing one class for the other.
+  * This level of misclassification indicates that the model struggles to reliably learn and apply the features that differentiate class "0" from class "1."
+* Low Recall for Class "1":
+  * The large number of false negatives (1156) compared to true positives (1175) shows that the model fails to identify many actual instances of class "1."
+  * Low recall for class "1" suggests the model is not learning the key patterns for accurately identifying this class.
+* Overfitting or Underfitting:
+  * The model could be underfitting, meaning it hasn’t learned enough to make reliable predictions for either class.
+  * Alternatively, it could be overfitting to specific patterns in the training data that don’t generalize well to new data, leading to poor performance.
+In summary, while the model makes correct predictions for both classes, the high error rates show that it’s not effectively learning the underlying distinctions between the classes. This indicates a need for improvement, possibly through tuning the model, selecting different features, gathering more data, or trying a different algorithm.
+
+#### Interpretation: Model's ability to classify and the importance of features.
+  Upon balancing the classes of the dataset, the accuracy results to 51%. This accuracy is close to random guessing for a binary classification problem, suggesting that the model struggles to find patterns linking the features (satisfaction ratings) to the target variable (order accuracy). In which it suggests that the problem might be:
+  * Weak Predictive Power of Features:
+    * The satisfaction ratings for delivery experience, food quality, and speed likely have limited predictive power regarding whether an order will be accurate.
+    * This might imply that order accuracy depends more on other operational factors, such as order preparation or logistical issues, rather than customer satisfaction metrics alone.
+  * Class Balance and Model Complexity:
+    * After balancing, the model does not favor either class and should ideally improve recall for previously underrepresented classes (e.g., inaccurate orders).
+    * However, with an accuracy close to random (51%), the model may be unable to effectively differentiate between accurate and inaccurate orders based on the given features.
+  *  Need for Additional Features:
+    *  To enhance predictive performance, additional features—such as specific details about the delivery process, item complexity, or even environmental factors (e.g., weather, peak times)—might be necessary to provide the model with a more meaningful context for predicting order accuracy.
+     
+#### REAL-WORLD APPLICATION
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
