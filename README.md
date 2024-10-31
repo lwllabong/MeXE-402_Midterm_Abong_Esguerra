@@ -86,15 +86,15 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 Steps in Data Preprocessing (as shown in the image below):
 
 ###### Importing Libraries and Dataset:
-The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
-The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
+* The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
+* The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
 
 ###### Initial Exploration:
 The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
 
 ###### Understanding Features and Target:
-The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we might want to predict.
-Identifying the target variable is an important part of preprocessing, as it guides feature selection and further steps.
+* The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we might want to predict.
+* Identifying the target variable is an important part of preprocessing, as it guides feature selection and further steps.
 
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
