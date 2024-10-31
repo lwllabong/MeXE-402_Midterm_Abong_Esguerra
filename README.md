@@ -229,7 +229,6 @@ The result of this prediction is shown as: array([14628.18813458])
 </p>
 
 
-
 ###### Summary:
 * The first part of the inference shows predictions made for multiple data points (stored in X_test) using the trained linear regression model.
 * The second part shows how you can make a prediction for a single, manually entered data point by passing a list of values to model.predict().
@@ -265,6 +264,15 @@ The model evaluation shows that the model performs reasonably well, as indicated
 ###### Comparison and Interpretation
 * It is possible for R² to be higher than Adjusted R², especially when the number of predictors (k) increases. Adjusted R² penalizes R² based on the number of predictors to prevent overfitting, which is why it’s often slightly lower than R² when there are multiple predictors.
 * In this example, the difference between R² (0.818) and Adjusted R² (0.731) indicates that while the model explains a good amount of variance, the Adjusted R² suggests some predictors may not be contributing significant information, hence the penalty.
+
+### INTERPRETATION 
+
+#### SIGNIFICANCE OF CO-EFFICIENTS 
+
+#### MODEL'S PREDICTIVE POWER
+The model's predictive power is measured primarily by metrics like R-squared (R²) and Adjusted R-squared. R² indicates the percentage of variance in car prices explained by the independent variables, with a high R² value, close to 1, suggesting that the model captures most of the variability in car prices, demonstrating strong predictive power. However, if R² is low, this suggests that other unmeasured factors may influence price.
+
+Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
 
 #### REAL-WORLD APPLICATION: 
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
