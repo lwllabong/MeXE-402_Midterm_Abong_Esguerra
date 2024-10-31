@@ -265,4 +265,95 @@ The model evaluation shows that the model performs reasonably well, as indicated
 #### REAL-WORLD APPLICATION: 
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
 
+#### Logistic Regression (CUSTOMER SATISFACTION)
 
+##### Dependent variable (y):
+Order Accuracy
+##### Independent variables (X):
+delivery speed satisfaction
+overall delivery satisfaction
+food quality satisfaction
+
+##### Order Accuracy Data  
+<ss>
+
+##### Order_Accuracy Datasheet (Filled and Balanced)
+-The image below shows the filled datasheet, missing values has been replaced in columns 1 to 3 (likely numerical) with their column means. Also, the missing values of the target variable here has been filled  with the the column mode. Aditionally, this updated datasheet shows the balanced classes of the target variable.
+<ss>
+
+##### Part 1: Data Preprocessing
+Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. 
+
+###### 1. Importing and Loading the Dataset:
+* The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
+* The dataset, stored in an Excel file (data.csv), is then loaded into a pandas DataFrame called dataset, making it easier to explore and manipulate.
+* Creates a copy of the original dataset, named data_filled, which will be used for data cleaning.
+<ss>
+
+###### 2. Handling Missing Values:
+* Numeric Columns: Missing values in columns 1 to 3 are filled with the mean of each column, a common approach to maintain data consistency for numeric features.
+<ss>
+* Categorical Column: For the column “Was your order accurate?,” missing values are filled with the mode (most frequent value). This step ensures that categorical data has no null entries, which is essential for model training.
+<ss>
+
+###### 3. Verification of Missing Data:
+* Prints the count of missing values in each column to ensure that they have been filled.
+* isna().sum() is used to print the number of missing values in each column, allowing us to verify that all missing values have been filled.
+<ss>
+
+###### 4. Encoding the target column as binary values:
+* The target column, “Was your order accurate?,” is encoded into binary values: Yes becomes 1, and No becomes 0. Encoding is necessary as logistic regression requires numerical values rather than text labels.
+<ss>
+
+###### 5. Preview Data:
+* The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
+<ss>
+
+###### 6. Check Data Info:
+* Provides summary information about the dataset, including column names, data types, and memory usage.
+<ss>
+
+###### 7. Getting inputs and output:
+* Features (X) and the target variable (y) are separated. This is essential for building and training the model, where X represents input variables and y is the output variable the model will predict.
+<ss>
+
+###### 8. Class Distribution Check:
+* The distribution of target classes is checked to identify any imbalance. Class imbalance can negatively affect model performance by biasing predictions towards the majority class.
+<ss>
+
+###### 9. Data Splitting and Resampling:
+* The data is split into training and test sets using train_test_split, with 30% allocated for testing and stratification to preserve the class distribution.
+* SMOTE (Synthetic Minority Over-sampling Technique) is applied to the training set to handle class imbalance. SMOTE creates synthetic samples of the minority class, balancing the class distribution and helping the model learn features of both classes more effectively.
+<ss>
+
+##### Part 2: Building and Training the Model
+This part involves selecting and training the machine learning model. Here, we initialize a logistic regression model and train it using the preprocessed and balanced dataset.
+
+###### 1. Logistic Regression Model Initialization
+* A logistic regression model is initialized with liblinear as the solver, suitable for smaller datasets or binary classification tasks.
+<ss>
+
+###### 2. Model Training
+* The model is trained using the resampled training data (X_train_res and y_train_res). During this step, the model learns relationships between the input features (X_train_res) and the target variable (y_train_res).
+Part 3: Evaluating the Model
+<ss>
+
+##### Part 3 - Evaluating the Model
+In this stage, we assess the model's performance to understand how well it can predict the target variable. Evaluation metrics help us interpret accuracy, balance, and reliability.
+
+###### 1. Generate Predictions and Classification Report
+* Predictions are made on the test set (y_pred).
+* A classification report is printed to assess the model’s performance using metrics like:
+  Precision: The proportion of true positive predictions among all positive predictions.
+  Recall: The proportion of true positives among all actual positives.
+  F1 Score: The harmonic mean of precision and recall, which balances the two metrics.
+<ss>
+
+###### 2. Confusion Matrix
+* The confusion matrix is printed to show counts of true positives, true negatives, false positives, and false negatives. This helps understand where the model is making errors and if there’s any bias toward one class. A Confusion Matrix Display is also provided.
+<ss>
+
+###### 3. Accuracy Calculation
+* Manual Calculation: The accuracy is manually calculated using specific values from the confusion matrix.
+* Alternative Calculation Using accuracy_score: For verification, accuracy is also calculated using the accuracy_score function from sklearn, which provides a quick way to confirm the accuracy score.
+<ss>
