@@ -226,6 +226,14 @@ The result of this prediction is shown as: array([14628.18813458])
   <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
 </p>
 
+##### I observed that the interference of single data points did not align closely with the model's fit, so I repeated the analysis, removing the integer variable, Car_Id, which I believe may have been interfering with the prediction accuracy.
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/5fb08741-fbf3-409b-92dc-b134b4c89720" width="700" height="300" alt="PART2-VEED">
+</p>
+
+
+
 ###### Summary:
 * The first part of the inference shows predictions made for multiple data points (stored in X_test) using the trained linear regression model.
 * The second part shows how you can make a prediction for a single, manually entered data point by passing a list of values to model.predict().
