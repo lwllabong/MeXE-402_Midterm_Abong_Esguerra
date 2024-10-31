@@ -268,6 +268,33 @@ The model evaluation shows that the model performs reasonably well, as indicated
 ### INTERPRETATION 
 
 #### SIGNIFICANCE OF CO-EFFICIENTS 
+In a linear regression model for predicting car prices, the significance of each coefficient reveals the strength and direction of the relationship between each independent variable and the car price (dependent variable). Here's a breakdown of how each independent variable's coefficient might be interpreted in this context:
+
+1. Wheelbase: A positive coefficient for wheelbase suggests that a longer distance between the front and rear wheels is associated with a higher car price, potentially due to the perception of a larger, more stable vehicle.
+
+2. Carlength: If carlength has a significant positive coefficient, longer cars may be more expensive, possibly due to additional materials or the perception of luxury.
+
+3. Carwidth: A positive coefficient for carwidth could indicate that wider cars, which may offer more interior space or stability, tend to be priced higher.
+
+4. Carheight: A significant positive coefficient here might suggest that taller cars, which may offer more headroom or a more robust design, contribute to a higher car price.
+
+5. Curbweight: This variable represents the car's weight without passengers or cargo. A positive coefficient for curbweight implies that heavier cars, often linked with larger or more luxurious models, are generally priced higher.
+
+6. Enginesize: If enginesize has a positive coefficient, larger engines are associated with higher prices, likely due to the increased power output and associated manufacturing costs.
+
+7. Bore: Bore ratio affects the engine’s performance. A significant positive coefficient indicates that a larger bore, which can increase engine performance, tends to drive up the car’s price.
+
+8. Stroke: Stroke volume within the engine affects performance and efficiency. A positive coefficient would imply that a larger stroke is associated with a higher price, possibly due to performance benefits.
+
+9. Compressionratio: If this has a significant coefficient, it indicates that a higher compression ratio, which affects engine efficiency, has an impact on price. A positive value could suggest that cars with more efficient or powerful engines are priced higher.
+
+10. Horsepower: A positive coefficient for horsepower would mean that cars with greater power output are typically more expensive, reflecting the cost and demand for powerful engines.
+
+11. Peakrpm: This variable represents the maximum RPM the engine can reach. A significant coefficient here would indicate that higher peak RPMs have a measurable impact on price, potentially tied to the car’s performance capabilities.
+
+12. Citympg and Highwaympg: These variables represent fuel efficiency in city and highway driving conditions. If these have significant positive coefficients, they suggest that more fuel-efficient cars (higher mpg) are more expensive. Conversely, negative coefficients could imply that higher efficiency correlates with lower prices, possibly reflecting lower production costs or targeting of cost-conscious buyers.
+
+Each coefficient’s significance level (p-value) is crucial to determine whether the variable’s relationship with car price is statistically meaningful. Coefficients with low p-values (typically below 0.05) indicate a statistically significant relationship, suggesting that the variable is likely a true contributor to variations in car prices. The size and sign of the coefficients indicate how much and in what direction each factor influences car price, enabling us to identify key drivers of pricing.
 
 #### MODEL'S PREDICTIVE POWER
 The model's predictive power is measured primarily by metrics like R-squared (R²) and Adjusted R-squared. R² indicates the percentage of variance in car prices explained by the independent variables, with a high R² value, close to 1, suggesting that the model captures most of the variability in car prices, demonstrating strong predictive power. However, if R² is low, this suggests that other unmeasured factors may influence price.
