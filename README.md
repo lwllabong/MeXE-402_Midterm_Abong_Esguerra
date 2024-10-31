@@ -95,6 +95,7 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 ###### Understanding Features and Target:
 * The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we need to predict.
 
+### Visualization
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
 #### GETTING INPUT AND OUTPUT
@@ -121,6 +122,8 @@ It is the process for selecting the input (independent variables) and output (de
 includes all features except the target variable (price).
 ###### y (output),
 includes only the price values, which is the variable we're aiming to predict with a regression model.
+
+### Visualization
 
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
 
@@ -163,6 +166,8 @@ This process helps create separate training and test datasets:
 
 * Training Set (X_train, y_train): Used to fit the model, allowing it to learn patterns in the data.
 * Test Set (X_test, y_test): Used to evaluate how well the model generalizes to unseen data.
+
+### Visualization
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
@@ -220,6 +225,8 @@ model.predict([[88.6,168.8,64.1,48.8,2548,130,3.47,2.68,9,111,5000,21,27]])
 The result of this prediction is shown as: array([13162.35799226])
 * This means that based on the input features provided, the model predicts a value of approximately 13162.36 for the target variable (car price).
 
+### Visualization
+
 <p align="left">
   <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
 </p>
@@ -245,6 +252,8 @@ The model evaluation uses two key metrics: R-Squared (R²) and Adjusted R-Square
 
 ###### Summary
 The model evaluation shows that the model performs reasonably well, as indicated by the high R² and Adjusted R² values. The Adjusted R² being slightly lower than R² suggests that not all features may contribute significantly to the model's predictive accuracy, but overall, the model captures a large portion of the variance in car prices.
+
+### Visualization
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="700" height="300" alt="Evaluating the model-VEED">
