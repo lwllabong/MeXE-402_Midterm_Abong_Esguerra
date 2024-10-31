@@ -81,7 +81,23 @@ Car_Price Datasheet
 
 ##### Data Preprocessing at VSCode
 
+Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. In the context of the image you shared, it looks like the initial steps of data preprocessing involve importing and inspecting a dataset of this car price assignment attributes to make it ready for further analysis.
+
+Steps in Data Preprocessing (as shown in the image below):
+
+###### Importing Libraries and Dataset:
+The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
+The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
+
+###### Initial Exploration:
+The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
+
+###### Understanding Features and Target:
+The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we might want to predict.
+Identifying the target variable is an important part of preprocessing, as it guides feature selection and further steps.
+
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
+
 
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
 
