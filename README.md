@@ -311,7 +311,8 @@ overall delivery satisfaction, and
 food quality satisfaction
 
 ##### Customer Satisfaction Data  
-<ss>
+Preview
+![image](https://github.com/user-attachments/assets/c9e27966-3cea-4dc1-9578-890b8ea85b5d)
 
 ##### Customer Satisfaction Datasheet (Filled and Balanced)
 The image below shows the filled datasheet, missing values has been replaced in columns 1 to 3 (likely numerical) with their column means. Also, the missing values of the target variable here has been filled  with the the column mode. Aditionally, this updated datasheet shows the balanced classes of the target variable.
@@ -325,8 +326,9 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 ###### 1. Importing and Loading the Dataset:
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (data.csv), is then loaded into a pandas DataFrame called dataset, making it easier to explore and manipulate.
+![image](https://github.com/user-attachments/assets/9b1ab6a3-7892-4bc6-b0f9-769d7dbacdf0)
 * Creates a copy of the original dataset, named data_filled, which will be used for data cleaning.
-![image](https://github.com/user-attachments/assets/708d4be4-69c2-4299-ab43-9140b7b11a79)
+![image](https://github.com/user-attachments/assets/c9205f63-f1a5-40f0-ba9d-8e18b34ccd9c)
 
 ###### 2. Handling Missing Values:
 * Numeric Columns: Missing values in columns 1 to 3 are filled with the mean of each column, a common approach to maintain data consistency for numeric features.
