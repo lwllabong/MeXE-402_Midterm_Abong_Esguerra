@@ -118,7 +118,7 @@ It is the process for selecting the input (independent variables) and output (de
 * This array y contains the values of the dependent variable, which is the car price that the model will try to predict.
 * 
 ##### Summary
-###### X (input), 
+###### X (input),
 includes all features except the target variable (price).
 ###### y (output),
 includes only the price values, which is the variable we're aiming to predict with a regression model.
@@ -127,7 +127,42 @@ includes only the price values, which is the variable we're aiming to predict wi
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
 
-Creating the Training and Test set
+##### Creating the Training and Test set
+
+ It is the process of splitting the dataset into training and test sets, which is a common step in preparing data for machine learning. 
+
+###### Explanation of Code and Outputs (based on the figure below)
+
+###### Importing train_test_split:
+
+* The code starts by importing the train_test_split function from sklearn.model_selection.
+* This function is designed to split the dataset into separate training and testing subsets for both the independent (input) and dependent (output) variables.
+
+###### Splitting the Data:
+
+* The line X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) is used to split the X and y arrays into training and test sets.
+* X represents the input features (independent variables).
+* y represents the target variable (dependent variable).
+* test_size=0.2 specifies that 20% of the data should be used for testing, while the remaining 80% will be used for training.
+* random_state=0 is a seed value that ensures the split is reproducible (the same split occurs every time the code is run).
+###### Resulting Variables:
+
+* X_train and y_train: These arrays contain 80% of the data, which will be used to train the model.
+* X_test and y_test: These arrays contain the remaining 20% of the data, which will be used to evaluate the model's performance.
+
+###### Example Output of Split Data
+* X_train: This is the part of the X array that is used for training the model. The content is a subset of the original data, containing 80% of the rows.
+* X_test: This is the part of the X array used for testing the model, containing the remaining 20% of rows.
+Similarly:
+
+* y_train: This would be the corresponding 80% subset of the y array (target variable values) used for training.
+* y_test: This is the corresponding 20% subset of the y array used for testing.
+  
+##### Summary
+This process helps create separate training and test datasets:
+
+* Training Set (X_train, y_train): Used to fit the model, allowing it to learn patterns in the data.
+* Test Set (X_test, y_test): Used to evaluate how well the model generalizes to unseen data.
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
