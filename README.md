@@ -242,6 +242,17 @@ The result of this prediction is shown as: array([14628.18813458])
 To evaluate the performance of both linear and logistic regression models, appropriate metrics must be used. For linear regression, key metrics include R-squared and Adjusted R-squared and metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE), which measure the model’s accuracy in predicting continuous values. (dagdagan ng about sa logistic). These metrics provide a clear view of model reliability, enhancing predictions in both continuous and categorical contexts.
 
 ##### For Linear Regression 
+
+##### Evaluating the Model 
+The model evaluation uses two key metrics: R-Squared (R²) and Adjusted R-Squared.
+
+1. R-Squared (R²): The R² score, calculated here as approximately 0.8455, represents the proportion of the variance in the dependent variable (car price) that is predictable from the independent variables. A higher R² value (close to 1) indicates a better fit, meaning that the model explains a significant portion of the variance in car prices based on the provided features.
+
+2. Adjusted R-Squared: Adjusted R², shown as approximately 0.7624, modifies the R² value by penalizing the model for including irrelevant features that do not improve the prediction. This value adjusts for the number of predictors used and is typically lower than R², especially when the model has multiple features. It provides a more accurate measure of model performance when there are multiple predictors.
+
+###### Summary
+The model evaluation shows that the model performs reasonably well, as indicated by the high R² and Adjusted R² values. The Adjusted R² being slightly lower than R² suggests that not all features may contribute significantly to the model's predictive accuracy, but overall, the model captures a large portion of the variance in car prices.
+
 <p align="left">
   <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="700" height="300" alt="Evaluating the model-VEED">
 </p>
