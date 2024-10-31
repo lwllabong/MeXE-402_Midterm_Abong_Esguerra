@@ -72,13 +72,13 @@ Car_Price Datasheet
 
 <img src="https://github.com/user-attachments/assets/9a8b1f9a-d9c6-42e3-845a-44c7e51e5403" alt="Screenshot" width="500" height="250">
 
-##### Data Preprocessing at VSCode
+### DATA PREPROCECSSING
 
 Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. 
 
 ##### Steps in Data Preprocessing (as shown in the image below):
 
-###### Importing Libraries and Dataset:
+#### IMPORTING LIBRARIES AND DATA SET:
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
 
@@ -90,7 +90,7 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
-##### Getting input and output
+#### GETTING INPUT AND OUTPUT
 It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
 
 ##### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
@@ -119,7 +119,7 @@ includes only the price values, which is the variable we're aiming to predict wi
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
 
-##### Creating the Training and Test set
+#### CREATING TRAINING AND TEST SET
 
  It is the process of splitting the dataset into training and test sets, which is a common step in preparing data for machine learning. 
 
@@ -161,18 +161,21 @@ This process helps create separate training and test datasets:
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
 </p>
 
-
 #### MODEL BUILDING AND TRAINING : 
 Developing linear regression approach that will predict a continuous or numerical outcome, such as car price, horsepower, and so on (dagdagan ng about logistic). This involves combining various methods and analytical techniques to achieve a more accurate and successful prediction of the outcome.
 
 ##### For Linear Regression 
 
-##### Building and Training the Model 
+### MODEL IMPLEMENTATION
+
+#### Building and Training the Model 
 This is where a linear regression model is being built, trained, and used for inference.
 
 ##### Here's an explanation of the steps (based on the shown figure below) :
 
-###### 1. Building the Model:
+###### 1. Building the Model: 
+(Scikit-learn, or sklearn, offers a range of efficient tools for data preprocessing, model selection, and evaluation, making it ideal for building and testing machine learning models. With features for handling missing values, scaling data, splitting datasets, and calculating performance metrics, Scikit-learn simplifies the workflow for creating predictive models, all with a straightforward and user-friendly interface.)
+
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 
@@ -236,7 +239,8 @@ To evaluate the performance of both linear and logistic regression models, appro
 
 ##### For Linear Regression 
 
-##### Evaluating the Model 
+### EVALUATION METRICS
+
 The model evaluation uses two key metrics: R-Squared (R²) and Adjusted R-Squared.
 
 1. R-Squared (R²): The R² score, calculated here as approximately 0.8455, represents the proportion of the variance in the dependent variable (car price) that is predictable from the independent variables. A higher R² value (close to 1) indicates a better fit, meaning that the model explains a significant portion of the variance in car prices based on the provided features.
