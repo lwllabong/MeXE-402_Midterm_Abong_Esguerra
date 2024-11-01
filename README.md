@@ -316,6 +316,16 @@ The model's predictive power is measured primarily by metrics like R-squared (R�
 
 Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
 
+### Discussion of Results
+
+##### Visualization of Regression 
+##### 1st Analysis
+
+<img src="https://github.com/user-attachments/assets/4d96b311-b70d-49fe-be18-b61e261a1a53" alt="image" width="600" height="350">
+
+##### 2nd Analysis
+
+<img src="https://github.com/user-attachments/assets/d8f0e468-3d96-4757-8395-279ad8fc22a8" alt="image" width="600" height="350">
 
 ### LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
 
