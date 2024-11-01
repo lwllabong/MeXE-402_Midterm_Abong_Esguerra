@@ -86,10 +86,10 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 * The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we need to predict.
 
 ### Visualization
-<img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="800" height="450">
 
 #### 2nd Analysis 
-<img src="https://github.com/user-attachments/assets/84404cf6-860a-4359-b2a3-3d532b946110" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/84404cf6-860a-4359-b2a3-3d532b946110" alt="image" width="800" height="450">
 
 #### GETTING INPUT AND OUTPUT
 It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
@@ -118,14 +118,14 @@ includes only the price values, which is the variable we're aiming to predict wi
 
 ### Visualization
 
-<img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="600" height="350">
 
-<img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="600" height="350">
 
 #### 2nd Analysis
-<img src="https://github.com/user-attachments/assets/62036e73-a054-4660-8767-8df8893fe62d" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/62036e73-a054-4660-8767-8df8893fe62d" alt="image" width="600" height="350">
 
-<img src="https://github.com/user-attachments/assets/3d42185f-d716-4281-9598-9c54918b574f" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/3d42185f-d716-4281-9598-9c54918b574f" alt="image" width="600" height="350">
 
 #### CREATING TRAINING AND TEST SET
 
@@ -173,13 +173,13 @@ This process helps create separate training and test datasets:
 
 #### 2nd analysis
 
-<img src="https://github.com/user-attachments/assets/b5a6bf8f-e23d-4921-a9cd-fc4197b8e1c9" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/b5a6bf8f-e23d-4921-a9cd-fc4197b8e1c9" alt="image" width="600" height="350">
 
-<img src="https://github.com/user-attachments/assets/2c1596e2-4d8e-421f-82da-dcc34de8b1dd" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/2c1596e2-4d8e-421f-82da-dcc34de8b1dd" alt="image" width="600" height="350">
 
-<img src="https://github.com/user-attachments/assets/9e481666-7294-44ae-8b87-e9f4601270fe" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/9e481666-7294-44ae-8b87-e9f4601270fe" alt="image" width="600" height="350">
 
-<img src="https://github.com/user-attachments/assets/c3ef46c3-ff31-42ea-b4b6-d9a20be16bd9" alt="image" width="500" height="250">
+<img src="https://github.com/user-attachments/assets/c3ef46c3-ff31-42ea-b4b6-d9a20be16bd9" alt="image" width="600" height="350">
 
 
 ### MODEL IMPLEMENTATION
@@ -237,13 +237,13 @@ The result of this prediction is shown as: array([13162.35799226])
 ### Visualization
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="700" height="300" alt="Building and training model-VEED">
+  <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="800" height="450" alt="Building and training model-VEED">
 </p>
 
 ##### I observed that the interference of single data points did not align closely with the model's fit, so I repeated the analysis, removing the integer variable, Car_Id, which I believe may have been interfering with the prediction accuracy.
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/5fb08741-fbf3-409b-92dc-b134b4c89720" width="700" height="300" alt="PART2-VEED">
+  <img src="https://github.com/user-attachments/assets/5fb08741-fbf3-409b-92dc-b134b4c89720" width="800" height="450" alt="PART2-VEED">
 </p>
 
 
@@ -265,12 +265,12 @@ The model evaluation shows that the model performs reasonably well, as indicated
 ### Visualization
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="700" height="300" alt="Evaluating the model-VEED">
+  <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="800" height="450" alt="Evaluating the model-VEED">
 </p>
 
 ##### Result of 2nd Analysis
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/3f68bad8-1fcd-430b-9e00-ec35cc33a4da" width="700" height="300" alt="PART 3-VEED">
+  <img src="https://github.com/user-attachments/assets/3f68bad8-1fcd-430b-9e00-ec35cc33a4da" width="800" height="450" alt="PART 3-VEED">
 </p>
 
 1. The R² value here is approximately 0.818, meaning about 81.8% of the variance in the target variable can be explained by the model’s predictors.
