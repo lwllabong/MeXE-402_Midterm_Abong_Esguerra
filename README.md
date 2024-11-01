@@ -327,6 +327,32 @@ Adjusted R-squared refines this measure by penalizing the inclusion of irrelevan
 
 <img src="https://github.com/user-attachments/assets/d8f0e468-3d96-4757-8395-279ad8fc22a8" alt="image" width="600" height="350">
 
+ Both diagram shows a scatter plot comparing predicted values and actual values from a regression model. 
+Here’s a breakdown of what this plot shows:
+* X-axis (Actual Value): The true or actual values from the dataset.
+* Y-axis (Predicted Value): The values predicted by the model.
+* Colored Dots: Each blue dot represents a single prediction, showing the relationship between the actual and predicted values for that data point.
+* Colored Line: This line represents a perfect prediction, where predicted values match the actual values exactly (a 45-degree line through the origin).
+
+###### If the model has perfect accuracy, all points would fall exactly on this line.
+###### The accuracy of a regression model is typically measured by how close the points are to this line. 
+
+And as a result of this regression in the both plot, some points deviate significantly from the line, especially for higher values. This suggests that the model may not be highly accurate, particularly for higher values, as it underpredicts and overpredicts for several cases.
+
+And based on the model evaluation that uses two key metrics: R-Squared (R²) and Adjusted R-Squared.
+
+##### Analysis 1
+The R² score, calculated here as approximately 0.8455; means that 84.5% of the variance in the actual values is explained by the model's predictions. This value is often interpreted as the model’s "fit" rather than "accuracy," but it's common to loosely interpret it as the model being "84% accurate" in capturing the underlying pattern in the data. While the Adjusted R², has approximately 0.7624; it suggests that when accounting for model complexity, around 76.2% of the variance in the actual values is explained by the model.
+
+##### Analysis 1
+ The R² value here is approximately 0.818; which means that 81.8% of the variance in the actual values is explained by the model. In a loose sense, it could say the model has an "accuracy" of 81.8%, as it captures most of the variation in the data. While Adjusted R² result here is approximately 0.731; it suggests that when accounting for model complexity, around 73.1% of the variance in the actual values is explained by the model.
+
+#### In summary:
+
+* In both analysis, the accuracy percentage in terms of R² is a fair interpretation of the model's performance.
+* While the adjusted R² shows a slightly lower fit, indicating that some predictive power may come from the number of predictors rather than meaningful data patterns.
+
+
 ### LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
 
 ##### Dependent variable (y):
