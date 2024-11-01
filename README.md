@@ -37,10 +37,10 @@ The objectives of this project are:
    - Analyze how car attributes influence price.
    - Understand how satisfaction metrics impact the likelihood of an accurate order.
 
-### For Linear Regression (CAR PRICING ASSIGNMENT)
+# Linear Regression (CAR PRICING ASSIGNMENT)
 
-###### (Y= CarPrice; dependent variable) 
-###### independent variables:
+##### (Y= CarPrice; dependent variable) 
+##### independent variables:
 wheelbase (distance between front and rear wheels)
 carlength (length of the car)
 carwidth (width of the car)
@@ -64,28 +64,28 @@ Car_Price Datasheet
 
 <img src="https://github.com/user-attachments/assets/7fb8bcd9-0c7b-4b23-9673-65dfd8f87838" alt="Screenshot" width="500" height="250">
 
-##### Car_Price Datasheet (Cleaned)
+#### Car_Price Datasheet (Cleaned)
 -The image below shows the edited datasheet where categorical variables(based on the data dictionary) have been removed for a cleaner and more effective analysis implementation.
 
 <img src="https://github.com/user-attachments/assets/9a8b1f9a-d9c6-42e3-845a-44c7e51e5403" alt="Screenshot" width="500" height="250">
 
-### DATA PREPROCECSSING
+## 1. DATA PREPROCECSSING
 
 Data preprocessing is the process of preparing raw data for analysis and modeling by transforming it into a clean, structured, and standardized format. 
 
-##### Steps in Data Preprocessing (as shown in the image below):
+#### Steps in Data Preprocessing (as shown in the image below):
 
 #### IMPORTING LIBRARIES AND DATA SET:
 * The code first imports the pandas library, which is commonly used in Python for data manipulation and analysis.
 * The dataset, stored in an Excel file (CarPrice_Ass.xlsx), is then loaded into a pandas DataFrame, making it easier to explore and manipulate.
 
-###### Initial Exploration:
+#### Initial Exploration:
 * The dataset.head(10) function displays the first 10 rows of the dataset. This initial look helps to understand the structure of the data, the features (columns), and the first few values in each feature.
 
-###### Understanding Features and Target:
+#### Understanding Features and Target:
 * The dataset contains various car attributes (features), such as wheelbase, carlength, curbweight, enginesize, horsepower, etc., along with price, which seems to be the target variable we need to predict.
 
-### Visualization
+### Visualization of Code
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="800" height="450">
 
 #### 2nd Analysis 
@@ -94,29 +94,29 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 #### GETTING INPUT AND OUTPUT
 It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
 
-##### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
+#### This is the step-by-step explanation for getting the inputs and output. (as shown in the image below)
 
-###### Selecting Inputs (Independent Variables):
+#### Selecting Inputs (Independent Variables):
 
 * The line X = dataset.iloc[:, :-1].values selects all rows (:) and all columns except the last one (:-1) from the dataset.
 * Here, dataset.iloc[:, :-1] uses the .iloc function, which allows for selection by index position. By specifying :-1, it includes all columns except the last one.
 * .values converts the resulting selection into a NumPy array.
 * This array X will contain all the features (independent variables) used for the model, excluding the target variable.
 
-###### Selecting Output (Dependent Variable):
+#### Selecting Output (Dependent Variable):
 
 * The line y = dataset.iloc[:, -1].values selects all rows (:) and only the last column (-1) from the dataset.
 * dataset.iloc[:, -1] refers to the last column, which is assumed to be the target variable (price) in this case.
 * .values again converts this selection into a NumPy array.
 * This array y contains the values of the dependent variable, which is the car price that the model will try to predict.
   
-##### Summary
-###### X (input),
+#### Summary
+##### X (input),
 includes all features except the target variable (price).
-###### y (output),
+##### y (output),
 includes only the price values, which is the variable we're aiming to predict with a regression model.
 
-### Visualization
+### Visualization of Code
 
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="600" height="350">
 
@@ -131,14 +131,14 @@ includes only the price values, which is the variable we're aiming to predict wi
 
  It is the process of splitting the dataset into training and test sets, which is a common step in preparing data for machine learning. 
 
-###### Explanation of Code and Outputs (based on the figure below)
+##### Explanation of Code and Outputs (based on the figure below)
 
-###### Importing train_test_split:
+#### Importing train_test_split:
 
 * The code starts by importing the train_test_split function from sklearn.model_selection.
 * This function is designed to split the dataset into separate training and testing subsets for both the independent (input) and dependent (output) variables.
 
-###### Splitting the Data:
+#### Splitting the Data:
 
 * The line X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0) is used to split the X and y arrays into training and test sets.
 * X represents the input features (independent variables).
@@ -146,26 +146,26 @@ includes only the price values, which is the variable we're aiming to predict wi
 * test_size=0.2 specifies that 20% of the data should be used for testing, while the remaining 80% will be used for training.
 * random_state=0 is a seed value that ensures the split is reproducible (the same split occurs every time the code is run).
   
-###### Resulting Variables:
+#### Resulting Variables:
 * X_train and y_train: These arrays contain 80% of the data, which will be used to train the model.
 * X_test and y_test: These arrays contain the remaining 20% of the data, which will be used to evaluate the model's performance.
 
-###### Example Output of Split Data
+#### Output of Split Data
 * X_train: This is the part of the X array that is used for training the model. The content is a subset of the original data, containing 80% of the rows.
 * X_test: This is the part of the X array used for testing the model, containing the remaining 20% of rows.
 
-###### Similarly:
+#### Similarly:
 
 * y_train: This would be the corresponding 80% subset of the y array (target variable values) used for training.
 * y_test: This is the corresponding 20% subset of the y array used for testing.
   
-##### Summary
+#### Summary
 This process helps create separate training and test datasets:
 
 * Training Set (X_train, y_train): Used to fit the model, allowing it to learn patterns in the data.
 * Test Set (X_test, y_test): Used to evaluate how well the model generalizes to unseen data.
 
-### Visualization
+### Visualization of code 
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
@@ -182,7 +182,7 @@ This process helps create separate training and test datasets:
 <img src="https://github.com/user-attachments/assets/c3ef46c3-ff31-42ea-b4b6-d9a20be16bd9" alt="image" width="600" height="350">
 
 
-### MODEL IMPLEMENTATION
+## 2. MODEL IMPLEMENTATION
 
 #### Building and Training the Model 
 This is where a linear regression model is being built, trained, and used for inference.
@@ -234,24 +234,24 @@ model.predict([[88.6,168.8,64.1,48.8,2548,130,3.47,2.68,9,111,5000,21,27]])
 The result of this prediction is shown as: array([13162.35799226])
 * This means that based on the input features provided, the model predicts a value of approximately 13162.36 for the target variable (car price).
 
-### Visualization
+### Visualization of Code
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/485a0190-f054-4e8e-a6c2-571299437bbe" width="800" height="450" alt="Building and training model-VEED">
 </p>
 
-##### I observed that the interference of single data points did not align closely with the model's fit, so I repeated the analysis, removing the integer variable, Car_Id, which I believe may have been interfering with the prediction accuracy.
+#### I observed that the interference of single data points did not align closely with the model's fit, so I repeated the analysis, removing the integer variable, Car_Id, which I believe may have been interfering with the prediction accuracy.
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/5fb08741-fbf3-409b-92dc-b134b4c89720" width="800" height="450" alt="PART2-VEED">
 </p>
 
 
-###### Summary:
+#### Summary:
 * The first part of the inference shows predictions made for multiple data points (stored in X_test) using the trained linear regression model.
 * The second part shows how you can make a prediction for a single, manually entered data point by passing a list of values to model.predict().
 
-### EVALUATION METRICS
+## 3. EVALUATION METRICS
 
 The model evaluation uses two key metrics: R-Squared (R²) and Adjusted R-Squared.
 
@@ -259,16 +259,16 @@ The model evaluation uses two key metrics: R-Squared (R²) and Adjusted R-Square
 
 2. Adjusted R-Squared: Adjusted R², shown as approximately 0.7624, modifies the R² value by penalizing the model for including irrelevant features that do not improve the prediction. This value adjusts for the number of predictors used and is typically lower than R², especially when the model has multiple features. It provides a more accurate measure of model performance when there are multiple predictors.
 
-###### Summary
+#### Summary
 The model evaluation shows that the model performs reasonably well, as indicated by the high R² and Adjusted R² values. The Adjusted R² being slightly lower than R² suggests that not all features may contribute significantly to the model's predictive accuracy, but overall, the model captures a large portion of the variance in car prices.
 
-### Visualization
+### Visualization of Code
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/37edc2f0-783c-4e3c-908d-39b517a23311" width="800" height="450" alt="Evaluating the model-VEED">
 </p>
 
-##### Result of 2nd Analysis
+#### Result of 2nd Analysis
 <p align="left">
   <img src="https://github.com/user-attachments/assets/3f68bad8-1fcd-430b-9e00-ec35cc33a4da" width="800" height="450" alt="PART 3-VEED">
 </p>
@@ -276,13 +276,10 @@ The model evaluation shows that the model performs reasonably well, as indicated
 1. The R² value here is approximately 0.818, meaning about 81.8% of the variance in the target variable can be explained by the model’s predictors.
 2. The Adjusted R² result here is approximately 0.731, meaning about 73.1% modifies the R² value by penalizing the model for including irrelevant features that do not improve the prediction.
 
-###### Comparison and Interpretation
-* It is possible for R² to be higher than Adjusted R², especially when the number of predictors (k) increases. Adjusted R² penalizes R² based on the number of predictors to prevent overfitting, which is why it’s often slightly lower than R² when there are multiple predictors.
-* In this, the difference between R² (0.818) and Adjusted R² (0.731) indicates that while the model explains a good amount of variance, the Adjusted R² suggests some predictors may not be contributing significant information, hence the penalty.
 
-### INTERPRETATION 
+## 4. INTERPRETATION 
 
-#### SIGNIFICANCE OF CO-EFFICIENTS 
+### SIGNIFICANCE OF CO-EFFICIENTS 
 In a linear regression model for predicting car prices, the significance of each coefficient reveals the strength and direction of the relationship between each independent variable and the car price (dependent variable). Here's a breakdown of how each independent variable's coefficient might be interpreted in this context:
 
 1. Wheelbase: A positive coefficient for wheelbase suggests that a longer distance between the front and rear wheels is associated with a higher car price, potentially due to the perception of a larger, more stable vehicle.
@@ -311,19 +308,19 @@ In a linear regression model for predicting car prices, the significance of each
 
 Each coefficient’s significance level (p-value) is crucial to determine whether the variable’s relationship with car price is statistically meaningful. Coefficients with low p-values (typically below 0.05) indicate a statistically significant relationship, suggesting that the variable is likely a true contributor to variations in car prices. The size and sign of the coefficients indicate how much and in what direction each factor influences car price, enabling us to identify key drivers of pricing.
 
-#### MODEL'S PREDICTIVE POWER
+### MODEL'S PREDICTIVE POWER
 The model's predictive power is measured primarily by metrics like R-squared (R²) and Adjusted R-squared. R² indicates the percentage of variance in car prices explained by the independent variables, with a high R² value, close to 1, suggesting that the model captures most of the variability in car prices, demonstrating strong predictive power. However, if R² is low, this suggests that other unmeasured factors may influence price.
 
 Adjusted R-squared refines this measure by penalizing the inclusion of irrelevant predictors. Unlike R², which can increase simply by adding more predictors, Adjusted R² decreases if a predictor doesn’t add meaningful value, helping to prevent overestimation of the model’s power. Together, R² and Adjusted R-squared provide insight into the model's effectiveness at capturing variability, offering a comprehensive view of its predictive strength.
 
-### Discussion of Results
+## Discussion of Results
 
-##### Visualization of Regression 
-##### 1st Analysis
+### Visualization of Regression 
+### 1st Analysis
 
 <img src="https://github.com/user-attachments/assets/4d96b311-b70d-49fe-be18-b61e261a1a53" alt="image" width="600" height="350">
 
-##### 2nd Analysis
+### 2nd Analysis
 
 <img src="https://github.com/user-attachments/assets/d8f0e468-3d96-4757-8395-279ad8fc22a8" alt="image" width="600" height="350">
 
@@ -334,26 +331,26 @@ Here’s a breakdown of what this plot shows:
 * Colored Dots: Each dot represents a single prediction, showing the relationship between the actual and predicted values for that data point.
 * Colored Line: This line represents a perfect prediction, where predicted values match the actual values exactly (a 45-degree line through the origin).
 
-###### If the model has perfect accuracy, all points would fall exactly on this line.
-###### The accuracy of a regression model is typically measured by how close the points are to this line. 
+#### If the model has perfect accuracy, all points would fall exactly on this line.
+#### The accuracy of a regression model is typically measured by how close the points are to this line. 
 
 And as a result of this regression in the both plot, some points deviate significantly from the line, especially for higher values. This suggests that the model may not be highly accurate, particularly for higher values, as it underpredicts and overpredicts for several cases.
 
 And based on the model evaluation that uses two key metrics: R-Squared (R²) and Adjusted R-Squared.
 
-##### Analysis 1
+### Analysis 1
 The R² score, calculated here as approximately 0.8455; means that 84.5% of the variance in the actual values is explained by the model's predictions. This value is often interpreted as the model’s "fit" rather than "accuracy," but it's common to loosely interpret it as the model being "84% accurate" in capturing the underlying pattern in the data. While the Adjusted R², has approximately 0.7624; it suggests that when accounting for model complexity, around 76.2% of the variance in the actual values is explained by the model.
 
-##### Analysis 1
+### Analysis 1
  The R² value here is approximately 0.818; which means that 81.8% of the variance in the actual values is explained by the model. In a loose sense, it could say the model has an "accuracy" of 81.8%, as it captures most of the variation in the data. While Adjusted R² result here is approximately 0.731; it suggests that when accounting for model complexity, around 73.1% of the variance in the actual values is explained by the model.
 
-#### In summary:
+### In summary:
 
 * In both analysis, the accuracy percentage in terms of R² is a fair interpretation of the model's performance.
 * While the adjusted R² shows a slightly lower fit, indicating that some predictive power may come from the number of predictors rather than meaningful data patterns.
 
 
-### LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
+# LOGISTIC REGRESSION (CUSTOMER SATISFACTION ANALYSIS)
 
 ##### Dependent variable (y):
 Order accuracy
