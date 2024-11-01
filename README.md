@@ -88,6 +88,9 @@ Data preprocessing is the process of preparing raw data for analysis and modelin
 ### Visualization
 <img src="https://github.com/user-attachments/assets/cab4ef5e-9aae-4acd-a561-8b3f76168681" alt="Screenshot" width="500" height="250">
 
+#### 2nd Analysis 
+<img src="https://github.com/user-attachments/assets/84404cf6-860a-4359-b2a3-3d532b946110" alt="image" width="500" height="250">
+
 #### GETTING INPUT AND OUTPUT
 It is the process for selecting the input (independent variables) and output (dependent variable) from the dataset.
 
@@ -118,6 +121,11 @@ includes only the price values, which is the variable we're aiming to predict wi
 <img src="https://github.com/user-attachments/assets/64aea8f5-e456-4e0a-b939-a21e120e7710" alt="Screenshot" width="500" height="250">
 
 <img src="https://github.com/user-attachments/assets/edef7cc1-45de-4299-b846-2a8d3c529285" alt="Screenshot" width="500" height="250">
+
+#### 2nd Analysis
+<img src="https://github.com/user-attachments/assets/62036e73-a054-4660-8767-8df8893fe62d" alt="image" width="500" height="250">
+
+<img src="https://github.com/user-attachments/assets/3d42185f-d716-4281-9598-9c54918b574f" alt="image" width="500" height="250">
 
 #### CREATING TRAINING AND TEST SET
 
@@ -162,6 +170,17 @@ This process helps create separate training and test datasets:
 <p align="left">
   <img src="https://github.com/user-attachments/assets/0b5954a6-4912-418f-a9a0-a9369b43950a" width="700" height="300" alt="training and test set-VEED">
 </p>
+
+#### 2nd analysis
+
+<img src="https://github.com/user-attachments/assets/b5a6bf8f-e23d-4921-a9cd-fc4197b8e1c9" alt="image" width="500" height="250">
+
+<img src="https://github.com/user-attachments/assets/2c1596e2-4d8e-421f-82da-dcc34de8b1dd" alt="image" width="500" height="250">
+
+<img src="https://github.com/user-attachments/assets/9e481666-7294-44ae-8b87-e9f4601270fe" alt="image" width="500" height="250">
+
+<img src="https://github.com/user-attachments/assets/c3ef46c3-ff31-42ea-b4b6-d9a20be16bd9" alt="image" width="500" height="250">
+
 
 ### MODEL IMPLEMENTATION
 
