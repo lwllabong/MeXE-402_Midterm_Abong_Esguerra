@@ -331,7 +331,7 @@ Adjusted R-squared refines this measure by penalizing the inclusion of irrelevan
 Here’s a breakdown of what this plot shows:
 * X-axis (Actual Value): The true or actual values from the dataset.
 * Y-axis (Predicted Value): The values predicted by the model.
-* Colored Dots: Each blue dot represents a single prediction, showing the relationship between the actual and predicted values for that data point.
+* Colored Dots: Each dot represents a single prediction, showing the relationship between the actual and predicted values for that data point.
 * Colored Line: This line represents a perfect prediction, where predicted values match the actual values exactly (a 45-degree line through the origin).
 
 ###### If the model has perfect accuracy, all points would fall exactly on this line.
