@@ -536,6 +536,24 @@ In summary, while the model makes correct predictions for both classes, the high
     * However, with an accuracy close to random (51%), the model may be unable to effectively differentiate between accurate and inaccurate orders based on the given features.
   *  Need for Additional Features:
     *  To enhance predictive performance, additional features—such as specific details about the delivery process, item complexity, or even environmental factors (e.g., weather, peak times)—might be necessary to provide the model with a more meaningful context for predicting order accuracy.
-     
+
+#### RESULT COMPARISON: LINEAR REGRESSION AND LOGISTIC REGRESSION
+Based on the findings from the two conducted regressions, this section presents the reflection on the results, comparison of the two regression methods, and the discussion of their limitations.
+
+* Results Reflection:
+  * The linear regression model used for the "CAR PRICING ASSIGNMENT" performed reasonably well, with high R² and adjusted R² values in both analyses. These values suggest that the model explains a significant portion of the variance in car prices, although the adjusted R² indicates that some predictors may contribute less meaningfully. The scatter plot showed some discrepancies between predicted and actual values, particularly for higher values, indicating potential limitations in accuracy.
+  * For the "CUSTOMER SATISFACTION ANALYSIS," logistic regression results were less favorable, with an accuracy of only 51% after balancing classes with SMOTE. Key evaluation metrics like precision, recall, and F1-score revealed high rates of misclassification, especially for identifying instances of order inaccuracy (class "0"). This indicates the model struggled to generalize well to the problem, suggesting that satisfaction ratings may be weak predictors of order accuracy.
+
+* Comparison of Regression Methods:
+  * Linear Regression (Car Pricing): Linear regression effectively captured a relationship between car features and car prices, as evidenced by the high R² and adjusted R² scores. These metrics showed that the model could explain a substantial portion of the variance in car prices. However, some predictors might not add significant value, as indicated by the drop in adjusted R².
+  * Logistic Regression (Customer Satisfaction): Logistic regression for customer satisfaction was less successful in distinguishing between classes (order accuracy). Even after class balancing, the model's accuracy and F1-scores were close to random guessing. This could indicate that customer satisfaction ratings alone may not be strong indicators of order accuracy, and additional factors may be required to improve predictive power.
+
+* Limitations:
+Both models demonstrated specific limitations:
+  * Linear Regression: The primary limitation was overfitting due to irrelevant predictors, as suggested by the difference between R² and adjusted R². This model may benefit from feature selection or dimensionality reduction to eliminate redundant predictors.
+  * Logistic Regression: The logistic model suffered from a lack of predictive power, likely due to weak feature relevance. High misclassification rates and low recall for class "1" indicate that satisfaction metrics might not adequately capture the factors affecting order accuracy. This model could benefit from incorporating additional features (e.g., operational data) and from further tuning to improve performance.
+
+In conclusion, while linear regression was reasonably successful in predicting car prices, logistic regression faced challenges in predicting order accuracy due to potentially insufficient features and high misclassification rates. Adding more relevant features and exploring alternative algorithms might improve logistic regression performance for similar cases.
+
 #### REAL-WORLD APPLICATION
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
