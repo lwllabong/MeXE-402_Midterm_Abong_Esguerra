@@ -192,8 +192,8 @@ This is where a linear regression model is being built, trained, and used for in
 #### 1. Building the Model: 
 From the code below, imports the LinearRegression class from Scikit-learn's linear_model module. This library provides efficient machine learning algorithms and tools, and LinearRegression is a core component for building linear regression models.
 
-from sklearn.linear_model import LinearRegression
-model = LinearRegression()
+  from sklearn.linear_model import LinearRegression
+  model = LinearRegression()
 
 * This code imports the LinearRegression class from the sklearn.linear_model module (part of the popular Scikit-learn library).
 * Then, an instance of the LinearRegression() model is created and stored in the model variable. This prepares the linear regression model, which will later be trained on data.
