@@ -555,3 +555,11 @@ In conclusion, while linear regression was reasonably successful in predicting c
 
 #### REAL-WORLD APPLICATION
 The knowledge gained from building and evaluating regression models will be applied to real-world scenarios. Linear regression can be used to predict numerical outcomes such as stock prices, real estate values, and energy consumption. Logistic regression will assist in solving classification problems such as predicting customer churn, detecting fraud, or diagnosing medical conditions based on patient data and so on. By interpreting the outcomes of these models, organizations can make informed decisions, optimize operations, and better understand the factors influencing the predictions.
+
+### Reference 
+
+### Linear Regression ( Car Pricing Assignment) 
+Automobile Dataset Link: https://www.kaggle.com/datasets/hellbuoy/car-price-prediction  
+
+### Logistic Regression (Customer Satisfaction)
+Customer Satisfaction Dataset Link: https://www.kaggle.com/datasets/ahmedaliraja/customer-satisfaction-10k
